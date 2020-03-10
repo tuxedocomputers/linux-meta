@@ -43,7 +43,6 @@ clean: debian/control
 # Versions of dkms packages.
 dkms_zfs_linux_version=$(shell gawk '/^zfs-linux / { print $$2; }' debian/dkms-versions)
 dkms_vbox_guest_version=$(shell gawk '/^virtualbox/ { print $$2; }' debian/dkms-versions)
-dkms_wireguard_version=$(shell gawk '/^wireguard-linux-compat / { print $$2; }' debian/dkms-versions)
 
 define variant_payload
 variant="$$(echo '$(variant)' | sed -e 's/--//')"; \
@@ -75,7 +74,6 @@ debian/control: $(control_files)
 gencontrol_flags = -Vkernel-version=$(KERNEL_VERSION)
 gencontrol_flags += -Vkernel-abi-version=$(KERNEL_ABI_VERSION)
 gencontrol_flags += -Vdkms:zfs-modules="zfs-modules (= $(dkms_zfs_linux_version)),"
-gencontrol_flags += -Vdkms:wireguard-modules="wireguard-modules (= $(dkms_wireguard_version)),"
 gencontrol_flags += -Vdkms:virtualbox-guest-modules="virtualbox-guest-modules (= $(dkms_vbox_guest_version)),"
 
 build-%:
