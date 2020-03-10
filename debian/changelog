@@ -1,3 +1,23 @@
+linux-meta-oem-5.6 (5.6.0.1003.3) focal; urgency=medium
+
+  * Bump ABI 5.6.0-1003
+
+  * Packaging resync (LP: 1786013)
+    - [Packaging] resync debian/dkms-versions from main package
+
+  * installing linux-modules-nvidia does not remove nvidia-dkms, and the kernel
+    prioritizes the wrong version of the module from disk (LP: 1856414)
+    - [Packaging] expose versioned provides for contained dkms binaries
+    - [Packaging] update-version -- add dkms-versions data to sync list
+
+  * Miscellaneous Ubuntu changes
+    - [Packaging] fix build-depends.
+
+  * Miscellaneous upstream changes
+    - Ubuntu: [Packaging] Drop wireguard dkms, it's provided by the kernel.
+
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Tue, 10 Mar 2020 11:30:40 +0200
+
 linux-meta-oem-5.6 (5.6.0.1002.2) focal; urgency=medium
 
   * Bump ABI 5.6.0-1002
