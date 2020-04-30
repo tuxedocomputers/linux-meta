@@ -1,3 +1,3 @@
-zfs-linux 0.8.3-1ubuntu10
-nvidia-graphics-drivers-440 440.64-0ubuntu3
-virtualbox 6.1.4-dfsg-2
+zfs-linux 0.8.3-1ubuntu12
+nvidia-graphics-drivers-440 440.82+really.440.64-0ubuntu6
+virtualbox 6.1.6-dfsg-1
