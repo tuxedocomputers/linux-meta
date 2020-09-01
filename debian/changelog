@@ -1,3 +1,10 @@
+linux-meta (5.8.0.18.22) groovy; urgency=medium
+
+  * Miscellaneous Ubuntu changes
+    - [Packaging] Add transitional packages for linux-oem-20.04
+
+ -- Seth Forshee <seth.forshee@canonical.com>  Tue, 01 Sep 2020 14:31:23 -0500
+
 linux-meta (5.8.0.18.21) groovy; urgency=medium
 
   * Miscellaneous Ubuntu changes
