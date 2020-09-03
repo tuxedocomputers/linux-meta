@@ -1,3 +1,9 @@
+linux-meta-hwe-5.8 (5.8.0.18.19~20.04.1) focal; urgency=medium
+
+  * Empty entry
+
+ -- Andrea Righi <andrea.righi@canonical.com>  Thu, 03 Sep 2020 17:09:54 +0200
+
 linux-meta (5.8.0.18.22) groovy; urgency=medium
 
   * Miscellaneous Ubuntu changes
