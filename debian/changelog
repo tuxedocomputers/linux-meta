@@ -1,3 +1,10 @@
+linux-meta-hwe-5.8 (5.8.0.18.19~20.04.2) focal; urgency=medium
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] update variants
+
+ -- Andrea Righi <andrea.righi@canonical.com>  Thu, 03 Sep 2020 18:31:18 +0200
+
 linux-meta-hwe-5.8 (5.8.0.18.19~20.04.1) focal; urgency=medium
 
   * Empty entry
