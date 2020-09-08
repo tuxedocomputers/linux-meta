@@ -1,19 +1,27 @@
-linux-meta-oem-5.6 (5.6.0.1024.22) focal; urgency=medium
+linux-meta-oem-5.6 (5.6.0.1028.23) focal; urgency=medium
+
+  * Bump ABI 5.6.0-1028
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] resync debian/dkms-versions from main package
 
   * Miscellaneous Ubuntu changes
     - [Debian] Get wireguard version from kernel module
     - [Packaging] Add back Provides: wireguard-linux-compat-modules
 
- -- Timo Aaltonen <timo.aaltonen@canonical.com>  Wed, 02 Sep 2020 16:41:41 +0300
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Tue, 08 Sep 2020 12:21:15 +0300
 
-linux-meta-oem-5.6 (5.6.0.1024.21) focal; urgency=medium
+linux-meta-oem-5.6 (5.6.0.1027.22) focal; urgency=medium
 
-  * Bump ABI 5.6.0-1024
+  * Bump ABI 5.6.0-1027
 
-  * Packaging resync (LP: #1786013)
-    - [Packaging] resync debian/dkms-versions from main package
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Mon, 07 Sep 2020 19:25:35 +0300
 
- -- Timo Aaltonen <timo.aaltonen@canonical.com>  Wed, 02 Sep 2020 11:46:33 +0300
+linux-meta-oem-5.6 (5.6.0.1026.21) focal; urgency=medium
+
+  * Bump ABI 5.6.0-1026
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Sun, 06 Sep 2020 13:00:05 +0200
 
 linux-meta-oem-5.6 (5.6.0.1023.20) focal; urgency=medium
 
