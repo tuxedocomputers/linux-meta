@@ -76,6 +76,7 @@ gencontrol_flags = -Vkernel-version=$(KERNEL_VERSION)
 gencontrol_flags += -Vkernel-abi-version=$(KERNEL_ABI_VERSION)
 gencontrol_flags += -Vdkms:zfs-modules="zfs-modules (= $(dkms_zfs_linux_version)),"
 gencontrol_flags += -Vdkms:virtualbox-guest-modules="virtualbox-guest-modules (= $(dkms_vbox_guest_version)),"
+gencontrol_flags += -Vdkms:wireguard-linux-compat-modules="wireguard-modules (= $(dkms_wireguard_version)),"
 
 build-%:
 	:
