@@ -1,3 +1,9 @@
+linux-meta-hwe-5.8 (5.8.0.19.20~20.04.5) focal; urgency=medium
+
+  * Bump ABI 5.8.0-19.20~20.05
+
+ -- Andrea Righi <andrea.righi@canonical.com>  Mon, 14 Sep 2020 10:30:07 +0200
+
 linux-meta-hwe-5.8 (5.8.0.19.20~20.04.4) focal; urgency=medium
 
   * Bump ABI 5.8.0-19.20~20.04
