@@ -1,3 +1,12 @@
+linux-meta-oem-5.6 (5.6.0.1031.27) focal; urgency=medium
+
+  * Bump ABI 5.6.0-1031
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] resync debian/dkms-versions from main package
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Fri, 09 Oct 2020 14:54:55 -0300
+
 linux-meta-oem-5.6 (5.6.0.1030.26) focal; urgency=medium
 
   * Bump ABI 5.6.0-1030
