@@ -1,4 +1,4 @@
-Package: linux-headers${variant:suffix}
+Package: linux-headers-oem${variant:suffix}
 Architecture: amd64
 Section: kernel
 Provides: ${variant:provides-headers}
@@ -7,7 +7,7 @@ Description: OEM Linux kernel headers
  This package will always depend on the latest OEM kernel headers
  available.
 
-Package: linux-image${variant:suffix}
+Package: linux-image-oem${variant:suffix}
 Architecture: amd64
 Section: kernel
 Provides: ${variant:provides-image} ${dkms:zfs-modules} ${dkms:wireguard-linux-compat-modules}
@@ -17,7 +17,7 @@ Description: OEM Linux kernel image
  This package will always depend on the latest OEM kernel image
  available.
 
-Package: linux-tools${variant:suffix}
+Package: linux-tools-oem${variant:suffix}
 Architecture: amd64
 Section: kernel
 Provides: linux-tools
@@ -26,11 +26,11 @@ Description: OEM Linux kernel tools
  This package will always depend on the latest OEM kernel tools
  available.
 
-Package: linux${variant:suffix}
+Package: linux-oem${variant:suffix}
 Architecture: amd64
 Section: kernel
 Provides:  ${test:provides-full-oem} ${test:provides-full-preferred} ${variant:provides}
-Depends: ${misc:Depends}, linux-image${variant:suffix} (= ${binary:Version}), linux-headers${variant:suffix} (= ${binary:Version})
+Depends: ${misc:Depends}, linux-image-oem${variant:suffix} (= ${binary:Version}), linux-headers-oem${variant:suffix} (= ${binary:Version})
 Description: Complete OEM Linux kernel and headers
  This package will always depend on the latest complete OEM Linux kernel
  and headers.
