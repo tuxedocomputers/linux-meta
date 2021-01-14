@@ -1,3 +1,9 @@
+linux-meta-hwe-5.8 (5.8.0.39.44~20.04.24) focal; urgency=medium
+
+  * Bump ABI 5.8.0-39.44~20.04
+
+ -- Ian May <ian.may@canonical.com>  Thu, 14 Jan 2021 17:30:36 -0600
+
 linux-meta-hwe-5.8 (5.8.0.38.43~20.04.23) focal; urgency=medium
 
   * Bump ABI 5.8.0-38.43~20.04
