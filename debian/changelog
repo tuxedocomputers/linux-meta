@@ -1,3 +1,9 @@
+linux-meta-hwe-5.8 (5.8.0.41.46~20.04.26) focal; urgency=medium
+
+  * Bump ABI 5.8.0-41.46~20.04
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Mon, 18 Jan 2021 18:41:25 +0100
+
 linux-meta-hwe-5.8 (5.8.0.40.45~20.04.25) focal; urgency=medium
 
   * Bump ABI 5.8.0-40.45~20.04
