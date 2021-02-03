@@ -1,3 +1,15 @@
+linux-meta-oem-5.10 (5.10.0.1014.14) focal; urgency=medium
+
+  * Bump ABI 5.10.0-1014
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] resync debian/dkms-versions from main package
+
+  * Miscellaneous Ubuntu changes
+    - [Packaging] Add transitional packages for linux-oem-20.04-edge
+
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Wed, 03 Feb 2021 15:39:55 +0200
+
 linux-meta-oem-5.10 (5.10.0.1013.13) focal; urgency=medium
 
   * Bump ABI 5.10.0-1013
