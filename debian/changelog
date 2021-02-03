@@ -1,3 +1,12 @@
+linux-meta-hwe-5.8 (5.8.0.42.47~20.04.28) focal; urgency=medium
+
+  * Bump ABI 5.8.0-42.47~20.04
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] resync debian/dkms-versions from main package
+
+ -- Khalid Elmously <khalid.elmously@canonical.com>  Wed, 03 Feb 2021 16:42:21 -0500
+
 linux-meta-hwe-5.8 (5.8.0.41.46~20.04.27) focal; urgency=medium
 
   * Miscellaneous Ubuntu changes
