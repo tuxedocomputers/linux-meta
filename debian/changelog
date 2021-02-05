@@ -1,3 +1,12 @@
+linux-meta-hwe-5.8 (5.8.0.43.49~20.04.29) focal; urgency=medium
+
+  * Bump ABI 5.8.0-43.49~20.04
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] resync debian/dkms-versions from main package
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Fri, 05 Feb 2021 10:18:26 +0100
+
 linux-meta-hwe-5.8 (5.8.0.42.47~20.04.28) focal; urgency=medium
 
   * Bump ABI 5.8.0-42.47~20.04
