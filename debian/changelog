@@ -1,3 +1,9 @@
+linux-meta-oem-5.10 (5.10.0.1019.20) focal; urgency=medium
+
+  * Bump ABI 5.10.0-1019
+
+ -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Fri, 19 Mar 2021 16:15:22 +0100
+
 linux-meta-oem-5.10 (5.10.0.1018.19) focal; urgency=medium
 
   * Bump ABI 5.10.0-1018
