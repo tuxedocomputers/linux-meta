@@ -1,3 +1,9 @@
+linux-meta-hwe-5.8 (5.8.0.48.54~20.04.32) focal; urgency=medium
+
+  * Bump ABI 5.8.0-48.54~20.04
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Sat, 20 Mar 2021 10:07:06 -0300
+
 linux-meta-hwe-5.8 (5.8.0.45.51~20.04.31) focal; urgency=medium
 
   * Bump ABI 5.8.0-45.51~20.04
