@@ -1,3 +1,9 @@
+linux-meta-hwe-5.8 (5.8.0.50.56~20.04.34) focal; urgency=medium
+
+  * Bump ABI 5.8.0-50.56~20.04
+
+ -- Kelsey Skunberg <kelsey.skunberg@canonical.com>  Mon, 12 Apr 2021 14:16:31 -0600
+
 linux-meta-hwe-5.8 (5.8.0.49.55~20.04.33) focal; urgency=medium
 
   * Bump ABI 5.8.0-49.55~20.04
