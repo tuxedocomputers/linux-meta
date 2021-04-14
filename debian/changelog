@@ -1,3 +1,9 @@
+linux-meta-oem-5.10 (5.10.0.1022.23) focal; urgency=medium
+
+  * Bump ABI 5.10.0-1022
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Wed, 14 Apr 2021 13:09:40 -0300
+
 linux-meta-oem-5.10 (5.10.0.1021.22) focal; urgency=medium
 
   * Bump ABI 5.10.0-1021
