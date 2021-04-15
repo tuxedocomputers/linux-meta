@@ -1,3 +1,9 @@
+linux-meta-oem-5.10 (5.10.0.1023.24) focal; urgency=medium
+
+  * Bump ABI 5.10.0-1023
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Thu, 15 Apr 2021 15:18:07 +0200
+
 linux-meta-oem-5.10 (5.10.0.1022.23) focal; urgency=medium
 
   * Bump ABI 5.10.0-1022
