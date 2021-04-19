@@ -1,3 +1,9 @@
+linux-meta-hwe-5.11 (5.11.0-16.17~20.04.1) focal; urgency=medium
+
+  * Empty entry
+
+ -- Andrea Righi <andrea.righi@canonical.com>  Mon, 19 Apr 2021 10:56:30 +0200
+
 linux-meta-hwe-5.8 (5.8.0.51.57~20.04.35) focal; urgency=medium
 
   * Bump ABI 5.8.0-51.57~20.04
