@@ -1,3 +1,13 @@
+linux-meta-hwe-5.11 (5.11.0.16.17~20.04.2) focal; urgency=medium
+
+  * Bump ABI 5.11.0-16.17~20.04
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] update variants
+    - [Packaging] resync debian/dkms-versions from main package
+
+ -- Andrea Righi <andrea.righi@canonical.com>  Tue, 20 Apr 2021 16:07:54 +0200
+
 linux-meta-hwe-5.11 (5.11.0-16.17~20.04.1) focal; urgency=medium
 
   * Empty entry
