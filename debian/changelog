@@ -1,3 +1,9 @@
+linux-meta-oem-5.10 (5.10.0.1034.35) focal; urgency=medium
+
+  * Bump ABI 5.10.0-1034
+
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Wed, 23 Jun 2021 12:30:20 +0300
+
 linux-meta-oem-5.10 (5.10.0.1033.34) focal; urgency=medium
 
   * Bump ABI 5.10.0-1033
