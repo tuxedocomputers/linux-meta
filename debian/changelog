@@ -1,3 +1,9 @@
+linux-meta-hwe-5.11 (5.11.0.24.25~20.04.8) focal; urgency=medium
+
+  * Bump ABI 5.11.0-24.25~20.04
+
+ -- Stefan Bader <stefan.bader@canonical.com>  Wed, 30 Jun 2021 10:55:50 +0200
+
 linux-meta-hwe-5.11 (5.11.0.23.24~20.04.7) focal; urgency=medium
 
   * Bump ABI 5.11.0-23.24~20.04
