@@ -1,3 +1,9 @@
+linux-meta-hwe-5.11 (5.11.0.25.27~20.04.9) focal; urgency=medium
+
+  * Bump ABI 5.11.0-25.27~20.04
+
+ -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Tue, 13 Jul 2021 13:41:55 -0300
+
 linux-meta-hwe-5.11 (5.11.0.24.25~20.04.8) focal; urgency=medium
 
   * Bump ABI 5.11.0-24.25~20.04
