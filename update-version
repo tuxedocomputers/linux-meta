@@ -26,14 +26,6 @@ else
 	here_version=$( LC_ALL=C dpkg-parsechangelog -S Version )
 fi
 
-# Ensure we have the appropriate tag.
-here_tagversion=$( echo "$tag_prefix$here_version" | sed -e 's/~/_/g' )
-count=$( git for-each-ref "refs/tags/$here_tagversion" | wc -l )
-if [ "$count" != 1 ]; then
-	echo "$0: $here_tagversion: tag not found" 1>&2
-	exit 1
-fi
-
 # Update things from the primary package.
 for thing in \
 	debian/dkms-versions \
@@ -65,10 +57,8 @@ here_abi=${here_version%.*}
 master_abi=$(echo ${master_version%.*} | sed -e 's/-/./g')
 master_abi_human=${master_version%.*}
 
-# Extract the upload number from the _previous_ upload and increment it.
-here_upload=${here_version##*.}
-here_upload=$(( $here_upload + 1 ))
-here_newversion="$master_abi.$here_upload"
+# Set new version to master version
+here_newversion="$(echo $master_version | sed -e 's/-/./g')"
 
 #echo "here_version<$here_version> here_abi<$here_abi> here_newversion<$here_newversion>"
 #echo "master_version<$master_version> master_abi<$master_abi>"
@@ -87,13 +77,6 @@ if dpkg --compare-versions "$here_abi" lt "$master_abi"; then
 	echo "  * Bump ABI $master_abi_human" >>"$tmp"
 fi
 
-# Format any existing commits.
-count=$( git log --oneline "$here_tagversion".. | wc -l )
-if [ "$count" != 0 ]; then
-	[ -f "$tmp" ] && echo "" >>"$tmp"
-	git log "$here_tagversion".. | "debian/scripts/misc/git-ubuntu-log" >>"$tmp"
-fi
-
 # Insert official changelog fragment.
 sed -i -e '/^  \* '"$marker"'/{
 r '"$tmp"'
@@ -105,6 +88,6 @@ rm -f "$tmp"
 dch --distribution "$here_series" --release ''
 
 # Emit final closing commands.
-echo "git commit -s -m 'UBUNTU: $tag_prefix$here_newversion' debian/changelog"
+git commit -s -m "TUXEDO: $tag_prefix$here_newversion" debian/changelog
 here_tagversion=$( echo "$tag_prefix$here_newversion" | sed -e 's/~/_/g' )
-echo "git tag -s -m '$tag_prefix$here_newversion' '$here_tagversion'"
+git tag -s -m "$tag_prefix$here_newversion" "$here_tagversion"
