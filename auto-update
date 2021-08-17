@@ -1,0 +1,43 @@
+#!/bin/bash
+
+echo "===Starting auto-update.==="
+
+set -ex
+
+SCRIPT=$(realpath "$0")
+SCRIPTPATH=$(dirname "$SCRIPT")
+cd "$SCRIPTPATH"
+
+echo "===Fetching newest version from upstream.==="
+
+if git remote | grep ubuntu-focal; then
+    git remote set-url ubuntu-focal https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta/+git/focal
+    git fetch ubuntu-focal -p
+else
+    git remote add -f --tags ubuntu-focal https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta/+git/focal
+fi
+
+CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-20.04 \().*(?=\))' debian/changelog)
+CURRENT_ABI=${CURRENT_VERSION%.*}
+NEWEST_VERSION=$(git describe --tags ubuntu-focal/hwe-5.11 --abbrev=0 | grep -Po '(?<=^Ubuntu-hwe-5.11-).*(?=$)' | tr '_' '~')
+NEWEST_ABI=${NEWEST_VERSION%.*}
+
+echo "Current Version: $CURRENT_ABI"
+echo "Newest Version: $NEWEST_ABI"
+
+if [ $CURRENT_ABI = $NEWEST_ABI ]; then
+    echo "===Version already up to date. Exiting.==="
+    exit
+fi
+
+echo "===Start metapackage update.==="
+
+echo "===Checking out correct Ubuntu kernel.==="
+NEWEST_ABI_NORMALIZED=$(echo $NEWEST_ABI | sed -e 's/\./-/3' | tr '~' '_')
+rm -rf ../linux-for-linux-meta
+git clone -b Ubuntu-hwe-5.11-${NEWEST_ABI_NORMALIZED}.1 --depth 1 -c advice.detachedHead=false git://kernel.ubuntu.com/ubuntu/ubuntu-focal.git ../linux-for-linux-meta
+
+echo "===Run update script.==="
+./update-version ../linux-for-linux-meta auto-commit
+
+echo "===Done.==="

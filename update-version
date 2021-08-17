@@ -2,8 +2,9 @@
 
 tag_prefix=`dpkg-parsechangelog -S Source | sed 's/linux-meta/Ubuntu/'`-
 
-if [ "$#" -ne 1 ]; then
+if [ "$#" -lt 1 ]; then
 	echo "Usage: $0 <linux-source-directory>" 1>&2
+	echo "       $0 <linux-source-directory> [auto-commit]" 1>&2
 	exit 1
 fi
 master_dir="$1"
@@ -50,7 +51,7 @@ do
 		git rm --ignore-unmatch "$to" || exit 1
 	fi
 	if ! git diff --exit-code HEAD -- "$thing" >/dev/null; then
-		msg="UBUNTU: [Packaging] resync $thing from main package
+		msg="TUXEDO: [Packaging] resync $thing from main package
 
 BugLink: http://bugs.launchpad.net/bugs/1786013"
 		git commit -m "$msg" -s -- "$thing"
@@ -105,6 +106,11 @@ rm -f "$tmp"
 dch --distribution "$here_series" --release ''
 
 # Emit final closing commands.
-echo "git commit -s -m 'UBUNTU: $tag_prefix$here_newversion' debian/changelog"
 here_tagversion=$( echo "$tag_prefix$here_newversion" | sed -e 's/~/_/g' )
-echo "git tag -s -m '$tag_prefix$here_newversion' '$here_tagversion'"
+if [ $# -eq 2 ] && [ $2 = "auto-commit" ]; then
+    git commit -s -m "TUXEDO: $tag_prefix$here_newversion" debian/changelog
+    git tag -s -m "$tag_prefix$here_newversion" "$here_tagversion"
+else
+    echo "git commit -s -m 'TUXEDO: $tag_prefix$here_newversion' debian/changelog"
+    echo "git tag -s -m '$tag_prefix$here_newversion' '$here_tagversion'"
+fi
