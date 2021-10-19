@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 tag_prefix=`dpkg-parsechangelog -S Source | sed 's/linux-meta/Ubuntu/'`-
 
 if [ "$#" -lt 1 ]; then
@@ -25,6 +27,14 @@ if [ "$here_series" = "UNRELEASED" ]; then
 	here_series=$( LC_ALL=C dpkg-parsechangelog -c 1 -S Distribution )
 else
 	here_version=$( LC_ALL=C dpkg-parsechangelog -S Version )
+fi
+
+# Ensure we have the appropriate tag.
+here_tagversion=$( echo "$tag_prefix$here_version" | sed -e 's/~/_/g' )
+count=$( git for-each-ref "refs/tags/$here_tagversion" | wc -l )
+if [ "$count" != 1 ]; then
+	echo "$0: $here_tagversion: tag not found" 1>&2
+	exit 1
 fi
 
 # Update things from the primary package.
@@ -58,8 +68,10 @@ here_abi=${here_version%.*}
 master_abi=$(echo ${master_version%.*} | sed -e 's/-/./g')
 master_abi_human=${master_version%.*}
 
-# Set new version to master version
-here_newversion="$(echo $master_version | sed -e 's/-/./g')"
+# Extract the upload number from the _previous_ upload and increment it.
+here_upload=${here_version##*.}
+here_upload=$(( $here_upload + 1 ))
+here_newversion="$master_abi.$here_upload"
 
 #echo "here_version<$here_version> here_abi<$here_abi> here_newversion<$here_newversion>"
 #echo "master_version<$master_version> master_abi<$master_abi>"
@@ -76,6 +88,13 @@ if dpkg --compare-versions "$here_abi" lt "$master_abi"; then
 	echo "Updated to ABI: $master_abi"
 	[ -f "$tmp" ] && echo "" >>"$tmp"
 	echo "  * Bump ABI $master_abi_human" >>"$tmp"
+fi
+
+# Format any existing commits.
+count=$( git log --oneline "$here_tagversion".. | wc -l )
+if [ "$count" != 0 ]; then
+	[ -f "$tmp" ] && echo "" >>"$tmp"
+	git log "$here_tagversion".. | "debian/scripts/misc/git-ubuntu-log" >>"$tmp"
 fi
 
 # Insert official changelog fragment.

@@ -17,6 +17,9 @@ default:
         - export DEBFULLNAME="Tuxedo BOT"
         - export DEBEMAIL="tux@tuxedocomputers.com"
 
+        # Set token based checkout url for the internal gitlab repository, this and the public github repository are 1 to 1 mirrors on all branches used here.
+        - export LINUX_REPO_URL="https://${TUXEDO_BOT_GITLAB_USERNAME}:${TUXEDO_BOT_GITLAB_CI_PERSONAL_ACCESS_TOKEN}@${LINUX_REPO_CLONE_URL_HTTPS#https://}"
+
 variables:
     # Create a fresh clone every time, instead of caching the last checkout of the repository. This
     # is required for a clean slate the way the auto-update script expects.
@@ -36,6 +39,7 @@ update:
         # Don't run on every push, but only manually issued and periodically.
         - web
         - schedule
+        - trigger
 
     script:
         # GitLab CI checks out in a detached head state, correct this to be able to push.
@@ -77,8 +81,8 @@ deploy:
 
     script:
         # Get version number.
-        - CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-20.04 \().*(?=\))' debian/changelog)
+        - CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-20.04-edge \().*(?=\))' debian/changelog)
 
         # Upload to new folder on internal Nextcould.
-        - curl -X MKCOL $TUXEDO_BOT_WEBDAV_LINUX_META_BASE_FOLDER_URL/$CURRENT_VERSION --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD
-        - find output/* -exec curl -T '{}' $TUXEDO_BOT_WEBDAV_LINUX_META_BASE_FOLDER_URL/$CURRENT_VERSION/ --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD \;
+        - curl -X MKCOL $TUXEDO_BOT_WEBDAV_LINUX_META_EDGE_BASE_FOLDER_URL/$CURRENT_VERSION --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD
+        - find output/* -exec curl -T '{}' $TUXEDO_BOT_WEBDAV_LINUX_META_EDGE_BASE_FOLDER_URL/$CURRENT_VERSION/ --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD \;
