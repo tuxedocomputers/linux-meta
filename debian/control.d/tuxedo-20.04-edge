@@ -25,6 +25,15 @@ Description: TUXEDO selected updated Linux kernel tools
  This package is one of the kernel packages that are offically supported on
  TUXEDO devices unless otherwise stated.
 
+Package: linux-cloud-tools-tuxedo-20.04-edge${variant:suffix}
+Architecture: amd64
+Section: kernel
+Provides: linux-cloud-tools
+Depends: ${misc:Depends}, linux-cloud-tools-${kernel-abi-version}-tuxedo
+Description: TUXEDO selected Linux kernel cloud tools
+ This package is one of the kernel packages that are offically supported on
+ TUXEDO devices unless otherwise stated.
+
 Package: linux-tuxedo-20.04-edge${variant:suffix}
 Architecture: amd64
 Section: kernel
