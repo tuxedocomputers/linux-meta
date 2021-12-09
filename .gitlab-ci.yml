@@ -61,7 +61,7 @@ build:
 
         # Copy results into build directory so that the artifacts keyword can pick them up.
         - mkdir -p output
-        - cp ../*.build ../*.buildinfo ../*.changes ../*.deb ../*.dsc ../*.tar.xz output
+        - mv ../*.build ../*.buildinfo ../*.changes ../*.deb ../*.dsc ../*.tar.xz output
 
     artifacts:
         # Save build results.
