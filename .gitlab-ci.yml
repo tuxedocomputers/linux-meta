@@ -45,8 +45,8 @@ update:
         - ./auto-update
 
         # Push using a GitLab Personal Access Token.
-        - git push "https://${TUXEDO_BOT_GITLAB_USERNAME}:${TUXEDO_BOT_GITLAB_CI_PERSONAL_ACCESS_TOKEN}@${CI_REPOSITORY_URL#*@}" "HEAD:${CI_COMMIT_REF_NAME}"
-        - git push "https://${TUXEDO_BOT_GITLAB_USERNAME}:${TUXEDO_BOT_GITLAB_CI_PERSONAL_ACCESS_TOKEN}@${CI_REPOSITORY_URL#*@}" "HEAD:${CI_COMMIT_REF_NAME}" --tags
+        - git push "https://${TUXEDO_BOT_GITLAB_USERNAME}:${TUXEDO_BOT_GITLAB_CI_PERSONAL_ACCESS_TOKEN}@${CI_REPOSITORY_URL#*@}" $CI_COMMIT_BRANCH
+        - git push "https://${TUXEDO_BOT_GITLAB_USERNAME}:${TUXEDO_BOT_GITLAB_CI_PERSONAL_ACCESS_TOKEN}@${CI_REPOSITORY_URL#*@}" $(git describe --tags --abbrev=0)
 
 build:
     stage: build
