@@ -1,8 +1,12 @@
 #!/bin/bash
 
-echo "===Starting auto-update.==="
-
 set -ex
+
+UBUNTU_CODENAME=focal
+MAINLINE_KERNEL_VERSION=5.13
+UBUNTU_KERNEL_BRANCH=hwe-${MAINLINE_KERNEL_VERSION}
+
+echo "===Starting auto-update.==="
 
 SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
@@ -10,16 +14,16 @@ cd "$SCRIPTPATH"
 
 echo "===Fetching newest version from upstream.==="
 
-if git remote | grep ubuntu-focal; then
-    git remote set-url ubuntu-focal https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta/+git/focal
-    git fetch ubuntu-focal -p
+if git remote | grep ubuntu-${UBUNTU_CODENAME}; then
+    git remote set-url ubuntu-${UBUNTU_CODENAME} https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta/+git/${UBUNTU_CODENAME}
+    git fetch ubuntu-${UBUNTU_CODENAME} -p
 else
-    git remote add -f --tags ubuntu-focal https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta/+git/focal
+    git remote add -f --tags ubuntu-${UBUNTU_CODENAME} https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta/+git/${UBUNTU_CODENAME}
 fi
 
-CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-20.04 \().*(?=\))' debian/changelog)
+CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-20.04-next \().*(?=\))' debian/changelog)
 CURRENT_ABI=${CURRENT_VERSION%.*}
-NEWEST_VERSION=$(git describe --tags ubuntu-focal/hwe-5.11 --abbrev=0 | grep -Po '(?<=^Ubuntu-hwe-5.11-).*(?=$)' | tr '_' '~')
+NEWEST_VERSION=$(git describe --tags ubuntu-${UBUNTU_CODENAME}/${UBUNTU_KERNEL_BRANCH} --abbrev=0 | grep -Po "(?<=^Ubuntu-${UBUNTU_KERNEL_BRANCH}-).*(?=$)" | tr '_' '~')
 NEWEST_ABI=${NEWEST_VERSION%.*}
 
 echo "Current Version: $CURRENT_ABI"
@@ -35,7 +39,7 @@ echo "===Start metapackage update.==="
 echo "===Checking out correct Ubuntu kernel.==="
 NEWEST_ABI_NORMALIZED=$(echo $NEWEST_ABI | sed -e 's/\./-/3' | tr '~' '_')
 rm -rf ../linux-for-linux-meta
-git clone -b Ubuntu-hwe-5.11-${NEWEST_ABI_NORMALIZED}.1 --depth 1 -c advice.detachedHead=false git://kernel.ubuntu.com/ubuntu/ubuntu-focal.git ../linux-for-linux-meta
+git clone -b Ubuntu-${UBUNTU_KERNEL_BRANCH}-${NEWEST_ABI_NORMALIZED}.1 --depth 1 -c advice.detachedHead=false git://kernel.ubuntu.com/ubuntu/ubuntu-${UBUNTU_CODENAME}.git ../linux-for-linux-meta
 
 echo "===Run update script.==="
 ./update-version ../linux-for-linux-meta auto-commit

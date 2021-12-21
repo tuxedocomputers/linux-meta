@@ -1,8 +1,12 @@
 #!/bin/bash
 
-echo "===Starting build.==="
-
 set -ex
+
+UBUNTU_CODENAME=focal
+MAINLINE_KERNEL_VERSION=5.13
+UBUNTU_KERNEL_BRANCH=hwe-${MAINLINE_KERNEL_VERSION}
+
+echo "===Starting build.==="
 
 SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
@@ -10,11 +14,11 @@ cd "$SCRIPTPATH"
 
 echo "===Determine Wireguard version.==="
 
-CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-20.04 \().*(?=\))' debian/changelog)
+CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-20.04-next \().*(?=\))' debian/changelog)
 CURRENT_ABI=${CURRENT_VERSION%.*}
 CURRENT_ABI_NORMALIZED=$(echo $CURRENT_ABI | sed -e 's/\./-/3' | tr '~' '_')
 rm -rf ../linux-for-linux-meta
-git clone -b Ubuntu-hwe-5.11-${CURRENT_ABI_NORMALIZED}.1 --depth 1 -c advice.detachedHead=false git://kernel.ubuntu.com/ubuntu/ubuntu-focal.git ../linux-for-linux-meta
+git clone -b Ubuntu-${UBUNTU_KERNEL_BRANCH}-${CURRENT_ABI_NORMALIZED}.1 --depth 1 -c advice.detachedHead=false git://kernel.ubuntu.com/ubuntu/ubuntu-${UBUNTU_CODENAME}.git ../linux-for-linux-meta
 WIREGUARD_VERSION=$(git -C ../linux-for-linux-meta grep -Poh '(?<=#define WIREGUARD_VERSION ")\d+\.\d+\.\d+(?=")')
 
 echo "===Building.==="
