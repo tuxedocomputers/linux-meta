@@ -106,4 +106,4 @@ linux-meta-tuxedo-20.04 (5.11.0.25.27~20.04.1) focal; urgency=medium
 
   * Start linux-tuxedo-20.04 metapackage
 
- -- Werner Sembach <tux@tuxedocomputers.com>  Mon, 16 Aug 2021 12:20:00 +0200
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 16 Aug 2021 12:20:00 +0200
