@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 tag_prefix=`dpkg-parsechangelog -S Source | sed 's/linux-meta/Ubuntu/'`-
 
 if [ "$#" -lt 1 ]; then
