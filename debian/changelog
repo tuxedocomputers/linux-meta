@@ -85,10 +85,10 @@ linux-meta-tuxedo-20.04-edge (5.11.0.26.28~20.04.1) focal; urgency=medium
 
   * Bump ABI 5.11.0-26.28~20.04
 
- -- Werner Sembach <tux@tuxedocomputers.com>  Fri, 06 Aug 2021 11:44:50 +0200
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 06 Aug 2021 11:44:50 +0200
 
 linux-meta-tuxedo-20.04-edge (5.10.0.1034.35) focal; urgency=medium
 
   * Start linux-tuxedo-20.04-edge metapackage
 
- -- Werner Sembach <tux@tuxedocomputers.com>  Thu, 15 Jul 2021 22:51:21 +0200
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 15 Jul 2021 22:51:21 +0200
