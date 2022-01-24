@@ -1,3 +1,10 @@
+linux-meta-tuxedo-20.04-edge-next (5.13.0.10027.29~20.04.3) focal; urgency=medium
+
+  * Miscellaneous upstream changes
+    - Fix more unupdated strings
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 24 Jan 2022 17:01:39 +0100
+
 linux-meta-tuxedo-20.04-edge-next (5.13.0.10027.29~20.04.2) focal; urgency=medium
 
   * Miscellaneous upstream changes
