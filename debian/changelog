@@ -1,3 +1,9 @@
+linux-meta-tuxedo-20.04 (5.13.0.10028.31~20.04.15) focal; urgency=medium
+
+  * Bump ABI 5.13.0-10028.31~20.04
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 01 Feb 2022 16:39:29 +0100
+
 linux-meta-tuxedo-20.04 (5.13.0.10027.29~20.04.14) focal; urgency=medium
 
   * Bump ABI 5.13.0-10027.29~20.04
