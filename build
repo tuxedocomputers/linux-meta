@@ -1,8 +1,13 @@
 #!/bin/bash
 
-echo "===Starting build.==="
-
 set -ex
+
+UBUNTU_CODENAME=focal
+MAINLINE_KERNEL_VERSION=5.13
+UBUNTU_KERNEL_BRANCH=hwe-${MAINLINE_KERNEL_VERSION}
+TUXEDO_KERNEL_BRANCH=tuxedo-${MAINLINE_KERNEL_VERSION}
+
+echo "===Starting build.==="
 
 SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
@@ -17,7 +22,7 @@ if [ -z $LINUX_REPO_URL ]; then
     LINUX_REPO_URL="https://github.com/tuxedocomputers/linux.git"
 fi
 rm -rf ../linux-for-linux-meta
-git clone -b Ubuntu-tuxedo-5.11-${CURRENT_ABI_NORMALIZED}.1tux1 --depth 1 -c advice.detachedHead=false $LINUX_REPO_URL ../linux-for-linux-meta
+git clone -b Ubuntu-${TUXEDO_KERNEL_BRANCH}-${CURRENT_ABI_NORMALIZED}.1tux1 --depth 1 -c advice.detachedHead=false $LINUX_REPO_URL ../linux-for-linux-meta
 WIREGUARD_VERSION=$(git -C ../linux-for-linux-meta grep -Poh '(?<=#define WIREGUARD_VERSION ")\d+\.\d+\.\d+(?=")')
 
 echo "===Building.==="
