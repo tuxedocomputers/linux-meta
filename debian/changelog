@@ -1,3 +1,12 @@
+linux-meta-tuxedo-20.04-next (5.13.0.10030.33~20.04.10) focal; urgency=medium
+
+  * Bump ABI 5.13.0-10030.33~20.04
+
+  * Miscellaneous upstream changes
+    - Fixed missed CI alterations when copying -edge build scripts
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 09 Feb 2022 16:19:05 +0000
+
 linux-meta-tuxedo-20.04-next (5.13.0.10029.32~20.04.9) focal; urgency=medium
 
   * Bump ABI 5.13.0-10029.32~20.04
