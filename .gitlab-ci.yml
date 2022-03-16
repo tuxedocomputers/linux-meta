@@ -1,12 +1,12 @@
 default:
-    # Custom docker image: ubuntu:focal with git, dpkg-dev, and devscripts preinstalled.
-    image: linux-meta-builder-ubuntu
+    # Custom docker image: ubuntu:jammy with some stuff preinstalled, see before_script comment.
+    image: linux-meta-builder-ubuntu-jammy
 
     before_script:
-        # git, dpkg-dev, and devscripts already installed on linux-meta-builder-ubuntu docker image,
-        # but manual installation required on runners that only have ubuntu:focal available.
+        # This is already installed on linux-meta-builder-ubuntu-jammy docker image, but manual
+        # installation required on runners that only have ubuntu:jammy available.
         # - apt-get update
-        # - DEBIAN_FRONTEND=noninteractive apt-get install -y git dpkg-dev devscripts debhelper kmod
+        # - DEBIAN_FRONTEND=noninteractive apt-get install -y git dpkg-dev devscripts debhelper gawk kmod
 
         # Configure git to be able to push.
         - git config --global user.name "Tuxedo BOT"
@@ -81,8 +81,8 @@ deploy:
 
     script:
         # Get version number.
-        - CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-20.04 \().*(?=\))' debian/changelog)
+        - CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04 \().*(?=\))' debian/changelog)
 
         # Upload to new folder on internal Nextcould.
-        - curl -X MKCOL $TUXEDO_BOT_WEBDAV_LINUX_META_BASE_FOLDER_URL/$CURRENT_VERSION --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD
-        - find output/* -exec curl -T '{}' $TUXEDO_BOT_WEBDAV_LINUX_META_BASE_FOLDER_URL/$CURRENT_VERSION/ --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD \;
+        - curl -X MKCOL $TUXEDO_BOT_WEBDAV_LINUX_META_22_04_BASE_FOLDER_URL/$CURRENT_VERSION --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD
+        - find output/* -exec curl -T '{}' $TUXEDO_BOT_WEBDAV_LINUX_META_22_04_BASE_FOLDER_URL/$CURRENT_VERSION/ --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD \;
