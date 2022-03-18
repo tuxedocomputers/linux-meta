@@ -1,5 +1,5 @@
-linux-meta-tuxedo-22.04 (5.15.0.10022.1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10023.1) focal; urgency=medium
 
-  * Dummy to be replaced
+  * Start linux-tuxedo-22.04
 
- -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 16 Mar 2022 12:00:00 +0100
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 18 Mar 2022 16:25:25 +0100
