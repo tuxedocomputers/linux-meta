@@ -1,3 +1,10 @@
+linux-meta-tuxedo-22.04 (5.15.0.10023.2) focal; urgency=medium
+
+  * Miscellaneous upstream changes
+    - Fix auto-update checking out no tag because of a parsing issue
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 28 Mar 2022 17:02:54 +0200
+
 linux-meta-tuxedo-22.04 (5.15.0.10023.1) focal; urgency=medium
 
   * Start linux-tuxedo-22.04
