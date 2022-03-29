@@ -37,8 +37,8 @@ Description: TUXEDO selected Linux kernel cloud tools
 Package: linux-tuxedo-22.04${variant:suffix}
 Architecture: amd64
 Section: kernel
-Provides: ${test:provides-full-tuxedo-20.04} ${test:provides-full-preferred}
-Depends: ${misc:Depends}, linux-image-tuxedo-20.04${variant:suffix} (= ${binary:Version}), linux-headers-tuxedo-20.04${variant:suffix} (= ${binary:Version})
+Provides: ${test:provides-full-tuxedo-22.04} ${test:provides-full-preferred}
+Depends: ${misc:Depends}, linux-image-tuxedo-22.04${variant:suffix} (= ${binary:Version}), linux-headers-tuxedo-22.04${variant:suffix} (= ${binary:Version})
 Description: Complete TUXEDO selected Linux kernel and headers
  This package is one of the kernel packages that are offically supported on
  TUXEDO devices unless otherwise stated.
