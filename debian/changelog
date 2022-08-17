@@ -1,23 +1,14 @@
-linux-meta-tuxedo-22.04 (5.15.0.10047.24) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10045.25) focal; urgency=medium
 
-  * Bump ABI 5.15.0-10047
+  * Bump ABI 5.15.0-10045
 
- -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 11 Aug 2022 02:27:33 +0000
+  * Miscellaneous upstream changes (False updates caused by missing tags)
+    - TUXEDO: Ubuntu-tuxedo-22.04-5.15.0.10043.21
+    - TUXEDO: Ubuntu-tuxedo-22.04-5.15.0.10043.22
+    - TUXEDO: Ubuntu-tuxedo-22.04-5.15.0.10043.23
+    - TUXEDO: Ubuntu-tuxedo-22.04-5.15.0.10047.24
 
-linux-meta-tuxedo-22.04 (5.15.0.10043.23) focal; urgency=medium
-
-
- -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 21 Jul 2022 22:14:36 +0000
-
-linux-meta-tuxedo-22.04 (5.15.0.10043.22) focal; urgency=medium
-
-
- -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 21 Jul 2022 20:24:54 +0000
-
-linux-meta-tuxedo-22.04 (5.15.0.10043.21) focal; urgency=medium
-
-
- -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 21 Jul 2022 18:26:05 +0000
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 17 Aug 2022 16:54:56 +0200
 
 linux-meta-tuxedo-22.04 (5.15.0.10043.20) focal; urgency=medium
 
