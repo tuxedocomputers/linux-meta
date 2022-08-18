@@ -24,7 +24,7 @@ fi
 rm -rf ../linux-for-linux-meta
 git clone --depth 1 -c advice.detachedHead=false $LINUX_REPO_URL ../linux-for-linux-meta
 git -C ../linux-for-linux-meta fetch --tags
-git -C ../linux-for-linux-meta checkout $(git -C ../linux-for-linux-meta tag | grep Ubuntu-${TUXEDO_KERNEL_BRANCH}-${CURRENT_ABI_NORMALIZED} | grep tux1 | grep -v _20.04)
+git -C ../linux-for-linux-meta checkout $(git -C ../linux-for-linux-meta tag | grep Ubuntu-${TUXEDO_KERNEL_BRANCH}-${CURRENT_ABI_NORMALIZED} | grep tux1 | grep -v _20.04 | head -n 1)
 WIREGUARD_VERSION=$(git -C ../linux-for-linux-meta grep -Poh '(?<=#define WIREGUARD_VERSION ")\d+\.\d+\.\d+(?=")')
 
 echo "===Building.==="
