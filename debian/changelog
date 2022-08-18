@@ -1,3 +1,10 @@
+linux-meta-tuxedo-22.04 (5.15.0.10047.28) focal; urgency=medium
+
+  * Miscellaneous upstream changes
+    - Fix build script checkout error on too similar tags
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 18 Aug 2022 09:55:54 +0200
+
 linux-meta-tuxedo-22.04 (5.15.0.10047.27) focal; urgency=medium
 
   * Bump ABI 5.15.0-10047
