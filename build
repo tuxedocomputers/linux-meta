@@ -11,7 +11,7 @@ cd "$SCRIPTPATH"
 CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04-edge \().*(?=\))' debian/changelog || true)
 CURRENT_ABI=${CURRENT_VERSION%.*}
 
-sudo apt-get install -y linux-image-${CURRENT_ABI%.*}-${CURRENT_ABI##*.}-oem
+apt-get install -y linux-image-${CURRENT_ABI%.*}-${CURRENT_ABI##*.}-oem
 
 echo "===Building.==="
 
