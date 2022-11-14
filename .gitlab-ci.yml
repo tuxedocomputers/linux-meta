@@ -81,8 +81,8 @@ deploy:
 
     script:
         # Get version number.
-        - CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04 \().*(?=\))' debian/changelog)
+        - CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04-edge \().*(?=\))' debian/changelog)
 
         # Upload to new folder on internal Nextcould.
-        - curl -X MKCOL $TUXEDO_BOT_WEBDAV_LINUX_META_22_04_BASE_FOLDER_URL/$CURRENT_VERSION --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD
-        - find output/* -exec curl -T '{}' $TUXEDO_BOT_WEBDAV_LINUX_META_22_04_BASE_FOLDER_URL/$CURRENT_VERSION/ --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD \;
+        - curl -X MKCOL $TUXEDO_BOT_WEBDAV_LINUX_META_22_04_EDGE_BASE_FOLDER_URL/$CURRENT_VERSION --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD
+        - find output/* -exec curl -T '{}' $TUXEDO_BOT_WEBDAV_LINUX_META_22_04_EDGE_BASE_FOLDER_URL/$CURRENT_VERSION/ --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD \;

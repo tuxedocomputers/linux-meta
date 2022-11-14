@@ -2,34 +2,19 @@
 
 set -ex
 
-UBUNTU_CODENAME=focal
-MAINLINE_KERNEL_VERSION=5.15
-UBUNTU_KERNEL_BRANCH=master
-TUXEDO_KERNEL_BRANCH=tuxedo-${MAINLINE_KERNEL_VERSION}
-
 echo "===Starting build.==="
 
 SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
-echo "===Determine Wireguard version.==="
-
-CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04 \().*(?=\))' debian/changelog)
+CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04-edge \().*(?=\))' debian/changelog || true)
 CURRENT_ABI=${CURRENT_VERSION%.*}
-CURRENT_ABI_NORMALIZED=$(echo $CURRENT_ABI | sed -e 's/\./-/3' | tr '~' '_')
-if [ -z $LINUX_REPO_URL ]; then
-    LINUX_REPO_URL="https://github.com/tuxedocomputers/linux.git"
-fi
-rm -rf ../linux-for-linux-meta
-git clone --depth 1 -c advice.detachedHead=false $LINUX_REPO_URL ../linux-for-linux-meta
-git -C ../linux-for-linux-meta fetch --tags
-git -C ../linux-for-linux-meta checkout $(git -C ../linux-for-linux-meta tag | grep Ubuntu-${TUXEDO_KERNEL_BRANCH}-${CURRENT_ABI_NORMALIZED} | grep tux1 | grep -v _20.04 | head -n 1)
-WIREGUARD_VERSION=$(git -C ../linux-for-linux-meta grep -Poh '(?<=#define WIREGUARD_VERSION ")\d+\.\d+\.\d+(?=")')
+
+sudo apt-get install -y linux-image-${CURRENT_ABI%.*}-${CURRENT_ABI##*.}-oem
 
 echo "===Building.==="
 
-fakeroot debian/rules clean
-debuild -e dkms_wireguard_version="$WIREGUARD_VERSION" -d
+fakeroot debian/rules clean binary
 
 echo "===Done.==="

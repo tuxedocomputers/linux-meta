@@ -1,0 +1,35 @@
+Package: linux-headers-tuxedo-22.04-edge${variant:suffix}
+Architecture: amd64
+Section: kernel
+Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-oem
+Description: TUXEDO selected Linux kernel headers
+ This package is one of the kernel packages that are offically supported on
+ TUXEDO devices unless otherwise stated.
+
+Package: linux-image-tuxedo-22.04-edge${variant:suffix}
+Architecture: amd64
+Section: kernel
+Provides: ${dkms:v4l2loopback-modules} ${dkms:zfs-modules} ${dkms:virtualbox-guest-modules} ${dkms:wireguard-linux-compat-modules}
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-oem | linux-image-unsigned-${kernel-abi-version}-oem, linux-firmware, intel-microcode [amd64], amd64-microcode [amd64]
+Recommends: thermald [amd64]
+Description: TUXEDO selected Linux kernel image
+ This package is one of the kernel packages that are offically supported on
+ TUXEDO devices unless otherwise stated.
+
+Package: linux-tools-tuxedo-22.04-edge${variant:suffix}
+Architecture: amd64
+Section: kernel
+Provides: linux-tools
+Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-oem
+Description: TUXEDO selected Linux kernel tools
+ This package is one of the kernel packages that are offically supported on
+ TUXEDO devices unless otherwise stated.
+
+Package: linux-tuxedo-22.04-edge${variant:suffix}
+Architecture: amd64
+Section: kernel
+Provides: ${test:provides-full-tuxedo-22.04-edge} ${test:provides-full-preferred}
+Depends: ${misc:Depends}, linux-image-tuxedo-22.04-edge${variant:suffix} (= ${binary:Version}), linux-headers-tuxedo-22.04-edge${variant:suffix} (= ${binary:Version})
+Description: Complete TUXEDO selected Linux kernel and headers
+ This package is one of the kernel packages that are offically supported on
+ TUXEDO devices unless otherwise stated.
