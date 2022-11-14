@@ -16,7 +16,7 @@ echo "===Fetching newest version from upstream.==="
 
 if git remote | grep ubuntu-oem-${UBUNTU_CODENAME}; then
     git remote set-url ubuntu-oem-${UBUNTU_CODENAME} git://git.launchpad.net/~canonical-kernel/ubuntu/+source/linux-meta-oem/+git/${UBUNTU_CODENAME}
-    git fetch ubuntu-oem-${UBUNTU_CODENAME} -p
+    git fetch ubuntu-oem-${UBUNTU_CODENAME} --prune
 else
     git remote add -f --tags ubuntu-oem-${UBUNTU_CODENAME} git://git.launchpad.net/~canonical-kernel/ubuntu/+source/linux-meta-oem/+git/${UBUNTU_CODENAME}
 fi
