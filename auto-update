@@ -37,13 +37,13 @@ fi
 echo "===Start metapackage update.==="
 
 echo "===Checking out correct Ubuntu kernel.==="
-if [ -z $LINUX_REPO_URL ]; then
-    LINUX_REPO_URL="git://git.launchpad.net/~canonical-kernel/ubuntu/+source/linux-oem/+git/jammy"
+if [ -z $LINUX_UBUNTU_OEM_REPO_URL ]; then
+    LINUX_UBUNTU_OEM_REPO_URL="git://git.launchpad.net/~canonical-kernel/ubuntu/+source/linux-oem/+git/jammy"
 fi
 rm -rf ../linux-for-linux-meta
 # Shallow cloning gives transport errors for some reason
 #git clone --depth 1 --config advice.detachedHead=false $LINUX_REPO_URL ../linux-for-linux-meta
-git clone --config advice.detachedHead=false $LINUX_REPO_URL ../linux-for-linux-meta
+git clone --config advice.detachedHead=false $LINUX_UBUNTU_OEM_REPO_URL ../linux-for-linux-meta
 git -C ../linux-for-linux-meta fetch --tags
 git -C ../linux-for-linux-meta checkout $(git -C ../linux-for-linux-meta tag | grep Ubuntu-${UBUNTU_KERNEL_META_BRANCH}-${NEWEST_ABI%.*}-${NEWEST_ABI##*.})
 
