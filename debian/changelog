@@ -1,3 +1,19 @@
+linux-meta-tuxedo-22.04-edge (6.0.0.1007.2) focal; urgency=medium
+
+  * Bump ABI 6.0.0-1007
+
+  * Packaging resync (LP: #1786013)
+    - TUXEDO: [Packaging] resync debian/dkms-versions from main package
+
+  * Miscellaneous upstream changes
+    - TUXEDO: Ubuntu-tuxedo-22.04-edge-6.0.0.1006.1
+    - Don't use shallow cloning as it breaks connection
+    - Spell out flag for better code readability
+    - Remove sudo from script intended for docker
+    - Rename environment variable to avoid collision
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 15 Nov 2022 17:54:56 +0100
+
 linux-meta-tuxedo-22.04-edge (6.0.0.1006.1) focal; urgency=medium
 
   * Start linux-tuxedo-22.04-edge
