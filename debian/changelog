@@ -1,3 +1,19 @@
+linux-meta-tuxedo-22.04-edge (6.0.0.1008.3) focal; urgency=medium
+
+  * Bump ABI 6.0.0-1008
+
+  * Packaging resync (LP: #1786013)
+    - TUXEDO: [Packaging] resync debian/dkms-versions from main package
+
+  * Miscellaneous upstream changes
+    - Fix build by manually setting dkms_wireguard_version again
+    - Make git clone faster
+    - Fix wrong variable name
+    - Fix build to include misc files
+    - Readd manual wiregard version set that was removed by accident
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 23 Nov 2022 16:06:29 +0000
+
 linux-meta-tuxedo-22.04-edge (6.0.0.1007.2) focal; urgency=medium
 
   * Bump ABI 6.0.0-1007
