@@ -27,6 +27,7 @@ WIREGUARD_VERSION=$(git -C ../linux-for-linux-meta grep -Poh '(?<=#define WIREGU
 
 echo "===Building.==="
 
-fakeroot debian/rules dkms_wireguard_version="$WIREGUARD_VERSION" clean binary
+fakeroot debian/rules clean
+debuild -e dkms_wireguard_version="$WIREGUARD_VERSION" -d
 
 echo "===Done.==="
