@@ -26,7 +26,7 @@ CURRENT_ABI=${CURRENT_VERSION%.*}
 NEWEST_VERSION=$(git describe --tags ubuntu-oem-${UBUNTU_CODENAME}/${UBUNTU_KERNEL_META_BRANCH} --abbrev=0 | grep -Po "(?<=^Ubuntu-${UBUNTU_KERNEL_META_BRANCH}-).*(?=$)")
 NEWEST_ABI=${NEWEST_VERSION%.*}
 
-echo "Current Version Base: $CURRENT_ABI_BASE"
+echo "Current Version Base: $CURRENT_ABI"
 echo "Newest Version Base: $NEWEST_ABI"
 
 if [ $CURRENT_ABI = $NEWEST_ABI ]; then
