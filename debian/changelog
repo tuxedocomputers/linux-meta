@@ -1,3 +1,12 @@
+linux-meta-tuxedo-20.04-next (5.15.0.10056.62~20.04.27) focal; urgency=medium
+
+  * Bump ABI 5.15.0-10056.62~20.04
+
+  * Packaging resync (LP: #1786013)
+    - TUXEDO: [Packaging] resync debian/dkms-versions from main package
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 05 Dec 2022 13:05:00 +0100
+
 linux-meta-tuxedo-20.04-next (5.15.0.10054.60~20.04.26) focal; urgency=medium
 
   * Bump ABI 5.15.0-10054.60~20.04
