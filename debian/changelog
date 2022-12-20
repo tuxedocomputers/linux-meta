@@ -1,37 +1,5 @@
-linux-meta-tuxedo-22.04-edge (6.0.0.1008.3) focal; urgency=medium
+linux-meta-tuxedo-22.04-next (6.0.0.1006.1) focal; urgency=medium
 
-  * Bump ABI 6.0.0-1008
+  * Start linux-tuxedo-22.04-next
 
-  * Packaging resync (LP: #1786013)
-    - TUXEDO: [Packaging] resync debian/dkms-versions from main package
-
-  * Miscellaneous upstream changes
-    - Fix build by manually setting dkms_wireguard_version again
-    - Make git clone faster
-    - Fix wrong variable name
-    - Fix build to include misc files
-    - Readd manual wiregard version set that was removed by accident
-
- -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 23 Nov 2022 16:06:29 +0000
-
-linux-meta-tuxedo-22.04-edge (6.0.0.1007.2) focal; urgency=medium
-
-  * Bump ABI 6.0.0-1007
-
-  * Packaging resync (LP: #1786013)
-    - TUXEDO: [Packaging] resync debian/dkms-versions from main package
-
-  * Miscellaneous upstream changes
-    - TUXEDO: Ubuntu-tuxedo-22.04-edge-6.0.0.1006.1
-    - Don't use shallow cloning as it breaks connection
-    - Spell out flag for better code readability
-    - Remove sudo from script intended for docker
-    - Rename environment variable to avoid collision
-
- -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 15 Nov 2022 17:54:56 +0100
-
-linux-meta-tuxedo-22.04-edge (6.0.0.1006.1) focal; urgency=medium
-
-  * Start linux-tuxedo-22.04-edge
-
- -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 14 Nov 2022 15:26:25 +0100
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 20 Dec 2022 16:59:31 +0100
