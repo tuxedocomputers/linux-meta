@@ -2,9 +2,7 @@
 
 set -ex
 
-UBUNTU_CODENAME=jammy
 MAINLINE_KERNEL_VERSION=6.0
-UBUNTU_KERNEL_META_BRANCH=oem-${MAINLINE_KERNEL_VERSION}
 
 echo "===Starting auto-update.==="
 
@@ -12,38 +10,33 @@ SCRIPT=$(realpath "$0")
 SCRIPTPATH=$(dirname "$SCRIPT")
 cd "$SCRIPTPATH"
 
-echo "===Fetching newest version from upstream.==="
+echo "===Get current version.==="
 
-if git remote | grep ubuntu-oem-${UBUNTU_CODENAME}; then
-    git remote set-url ubuntu-oem-${UBUNTU_CODENAME} git://git.launchpad.net/~canonical-kernel/ubuntu/+source/linux-meta-oem/+git/${UBUNTU_CODENAME}
-    git fetch ubuntu-oem-${UBUNTU_CODENAME} --prune
-else
-    git remote add -f --tags ubuntu-oem-${UBUNTU_CODENAME} git://git.launchpad.net/~canonical-kernel/ubuntu/+source/linux-meta-oem/+git/${UBUNTU_CODENAME}
-fi
-
-CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04-edge \().*(?=\))' debian/changelog || true)
+CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04-next \().*(?=\))' debian/changelog || true)
 CURRENT_ABI=${CURRENT_VERSION%.*}
-NEWEST_VERSION=$(git describe --tags ubuntu-oem-${UBUNTU_CODENAME}/${UBUNTU_KERNEL_META_BRANCH} --abbrev=0 | grep -Po "(?<=^Ubuntu-${UBUNTU_KERNEL_META_BRANCH}-).*(?=$)")
-NEWEST_ABI=${NEWEST_VERSION%.*}
 
 echo "Current Version Base: $CURRENT_ABI"
-echo "Newest Version Base: $NEWEST_ABI"
-
-if [ $CURRENT_ABI = $NEWEST_ABI ]; then
-    echo "===Version already up to date. Exiting.==="
-    exit
-fi
 
 echo "===Start metapackage update.==="
 
 echo "===Checking out correct Ubuntu kernel.==="
-if [ -z $LINUX_UBUNTU_OEM_REPO_URL ]; then
-    LINUX_UBUNTU_OEM_REPO_URL="git://git.launchpad.net/~canonical-kernel/ubuntu/+source/linux-oem/+git/jammy"
+if [ -z $LINUX_REPO_URL ]; then
+    LINUX_REPO_URL="https://github.com/tuxedocomputers/linux.git"
 fi
 rm -rf ../linux-for-linux-meta
-git clone --no-checkout --config advice.detachedHead=false $LINUX_UBUNTU_OEM_REPO_URL ../linux-for-linux-meta
+git clone --branch tuxedo-$MAINLINE_KERNEL_VERSION-22.04 $LINUX_REPO_URL ../linux-for-linux-meta
 git -C ../linux-for-linux-meta fetch --tags
-git -C ../linux-for-linux-meta checkout $(git -C ../linux-for-linux-meta tag | grep Ubuntu-${UBUNTU_KERNEL_META_BRANCH}-${NEWEST_ABI%.*}-${NEWEST_ABI##*.})
+NEWEST_VERSION_TAG=$(git -C ../linux-for-linux-meta describe --abbrev=0)
+NEWEST_VERSION=${NEWEST_VERSION_TAG#Ubuntu-tuxedo-$MAINLINE_KERNEL_VERSION-}
+NEWEST_VERSION_ABI=${NEWEST_VERSION%.*}
+NEWEST_VERSION_ABI_NORMALIZED=$(echo $NEWEST_VERSION_ABI | tr '-' '.')
+
+if [ $CURRENT_ABI = $NEWEST_VERSION_ABI_NORMALIZED ]; then
+    echo "===Version already up to date. Exiting.==="
+    exit
+fi
+
+git -C ../linux-for-linux-meta checkout $NEWEST_VERSION_TAG
 
 echo "===Run update script.==="
 ./update-version ../linux-for-linux-meta auto-commit

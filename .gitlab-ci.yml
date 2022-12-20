@@ -3,11 +3,6 @@ default:
     image: linux-meta-builder-ubuntu-jammy
 
     before_script:
-        # This is already installed on linux-meta-builder-ubuntu-jammy docker image, but manual
-        # installation required on runners that only have ubuntu:jammy available.
-        # - apt-get update
-        # - DEBIAN_FRONTEND=noninteractive apt-get install -y git dpkg-dev devscripts debhelper gawk kmod
-
         # Configure git to be able to push.
         - git config --global user.name "Tuxedo BOT"
         - git config --global user.email "tux@tuxedocomputers.com"
@@ -81,8 +76,8 @@ deploy:
 
     script:
         # Get version number.
-        - CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04-edge \().*(?=\))' debian/changelog)
+        - CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04-next \().*(?=\))' debian/changelog)
 
         # Upload to new folder on internal Nextcould.
-        - curl -X MKCOL $TUXEDO_BOT_WEBDAV_LINUX_META_22_04_EDGE_BASE_FOLDER_URL/$CURRENT_VERSION --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD
-        - find output/* -exec curl -T '{}' $TUXEDO_BOT_WEBDAV_LINUX_META_22_04_EDGE_BASE_FOLDER_URL/$CURRENT_VERSION/ --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD \;
+        - curl -X MKCOL $TUXEDO_BOT_WEBDAV_LINUX_META_22_04_NEXT_BASE_FOLDER_URL/$CURRENT_VERSION --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD
+        - find output/* -exec curl -T '{}' $TUXEDO_BOT_WEBDAV_LINUX_META_22_04_NEXT_BASE_FOLDER_URL/$CURRENT_VERSION/ --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD \;
