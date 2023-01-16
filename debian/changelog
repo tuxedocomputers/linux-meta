@@ -1,3 +1,12 @@
+linux-meta-tuxedo-22.04-edge (6.0.0.1010.4) focal; urgency=medium
+
+  * Bump ABI 6.0.0-1010
+
+  * Miscellaneous upstream changes
+    - Switch to tuxedo kernel branch
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 16 Jan 2023 15:08:31 +0100
+
 linux-meta-tuxedo-22.04-edge (6.0.0.1008.3) focal; urgency=medium
 
   * Bump ABI 6.0.0-1008
