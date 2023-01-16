@@ -3,7 +3,7 @@
 set -ex
 
 MAINLINE_KERNEL_VERSION=6.0
-TUXEDO_KERNEL_BRANCH=oem-${MAINLINE_KERNEL_VERSION}
+TUXEDO_KERNEL_BRANCH=tuxedo-${MAINLINE_KERNEL_VERSION}
 
 echo "===Starting build.==="
 
@@ -16,11 +16,11 @@ echo "===Determine Wireguard version.==="
 CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04-edge \().*(?=\))' debian/changelog || true)
 CURRENT_ABI=${CURRENT_VERSION%.*}
 CURRENT_ABI_NORMALIZED=$(echo $CURRENT_ABI | sed -e 's/\./-/3' | tr '~' '_')
-if [ -z $LINUX_UBUNTU_OEM_REPO_URL ]; then
-    LINUX_UBUNTU_OEM_REPO_URL="git://git.launchpad.net/~canonical-kernel/ubuntu/+source/linux-oem/+git/jammy"
+if [ -z $LINUX_REPO_URL ]; then
+    LINUX_REPO_URL="git://git.launchpad.net/~canonical-kernel/ubuntu/+source/linux-oem/+git/jammy"
 fi
 rm -rf ../linux-for-linux-meta
-git clone --no-checkout --config advice.detachedHead=false $LINUX_UBUNTU_OEM_REPO_URL ../linux-for-linux-meta
+git clone --no-checkout --config advice.detachedHead=false $LINUX_REPO_URL ../linux-for-linux-meta
 git -C ../linux-for-linux-meta fetch --tags
 git -C ../linux-for-linux-meta checkout $(git -C ../linux-for-linux-meta tag | grep Ubuntu-${TUXEDO_KERNEL_BRANCH}-${CURRENT_ABI_NORMALIZED} | head -n 1)
 WIREGUARD_VERSION=$(git -C ../linux-for-linux-meta grep -Poh '(?<=#define WIREGUARD_VERSION ")\d+\.\d+\.\d+(?=")')

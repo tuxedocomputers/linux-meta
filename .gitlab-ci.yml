@@ -3,11 +3,6 @@ default:
     image: linux-meta-builder-ubuntu-jammy
 
     before_script:
-        # This is already installed on linux-meta-builder-ubuntu-jammy docker image, but manual
-        # installation required on runners that only have ubuntu:jammy available.
-        # - apt-get update
-        # - DEBIAN_FRONTEND=noninteractive apt-get install -y git dpkg-dev devscripts debhelper gawk kmod
-
         # Configure git to be able to push.
         - git config --global user.name "Tuxedo BOT"
         - git config --global user.email "tux@tuxedocomputers.com"
