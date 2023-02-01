@@ -2,7 +2,7 @@
 
 set -ex
 
-MAINLINE_KERNEL_VERSION=6.0
+MAINLINE_KERNEL_VERSION=6.1
 TUXEDO_KERNEL_BRANCH=tuxedo-${MAINLINE_KERNEL_VERSION}
 
 echo "===Starting build.==="
@@ -17,7 +17,7 @@ CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04-next \().*(?=\))' deb
 CURRENT_ABI=${CURRENT_VERSION%.*}
 CURRENT_ABI_NORMALIZED=$(echo $CURRENT_ABI | sed -e 's/\./-/3' | tr '~' '_')
 if [ -z $LINUX_REPO_URL ]; then
-    LINUX_REPO_URL="git://git.launchpad.net/~canonical-kernel/ubuntu/+source/linux-oem/+git/jammy"
+    LINUX_REPO_URL="https://github.com/tuxedocomputers/linux.git"
 fi
 rm -rf ../linux-for-linux-meta
 git clone --no-checkout --config advice.detachedHead=false $LINUX_REPO_URL ../linux-for-linux-meta

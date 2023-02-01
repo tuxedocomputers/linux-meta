@@ -5,6 +5,6 @@ Section: kernel
 Provides: ${dkms:MODULE-modules}
 Depends:
  ${misc:Depends},
- linux-modules-MODULE-${kernel-abi-version}-oem,
+ linux-modules-MODULE-${kernel-abi-version}-FLAVOUR,
 Description: Extra drivers for MODULE for the FLAVOUR flavour
  Install extra signed MODULE modules compatible with the FLAVOUR flavour.
