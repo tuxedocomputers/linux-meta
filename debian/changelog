@@ -1,3 +1,12 @@
+linux-meta-tuxedo-22.04-next (6.1.0.1001.8) focal; urgency=medium
+
+  * Bump ABI 6.1.0-1001
+
+  * Miscellaneous upstream changes
+    - Direct to 6.1 kernel
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 02 Feb 2023 13:38:10 +0100
+
 linux-meta-tuxedo-22.04-next (6.0.0.1012.7) focal; urgency=medium
 
   * Bump ABI 6.0.0-1012
