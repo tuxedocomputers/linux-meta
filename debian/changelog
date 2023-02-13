@@ -1,3 +1,12 @@
+linux-meta-tuxedo-22.04-edge (6.0.0.1013.7) focal; urgency=medium
+
+  * Bump ABI 6.0.0-1013
+
+  * Miscellaneous upstream changes
+    - Fix wrong url
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 13 Feb 2023 23:29:27 +0000
+
 linux-meta-tuxedo-22.04-edge (6.0.0.1012.6) focal; urgency=medium
 
   * Bump ABI 6.0.0-1012
