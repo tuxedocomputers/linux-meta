@@ -1,3 +1,12 @@
+linux-meta-tuxedo-22.04-next (6.2.0.10007.24) focal; urgency=medium
+
+  * Bump ABI 6.2.0-10007
+
+  * Packaging resync (LP: #1786013)
+    - TUXEDO: [Packaging] resync debian/dkms-versions from main package
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 06 Apr 2023 23:27:40 +0000
+
 linux-meta-tuxedo-22.04-next (6.2.0.10006.23) focal; urgency=medium
 
   * Bump ABI 6.2.0-10006
