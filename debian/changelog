@@ -1,3 +1,9 @@
+linux-meta-tuxedo-20.04-edge-next (5.15.0.10073.80~20.04.40) focal; urgency=medium
+
+  * Bump ABI 5.15.0-10073.80~20.04
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 07 Jun 2023 14:52:21 +0200
+
 linux-meta-tuxedo-20.04-edge-next (5.15.0.10072.79~20.04.39) focal; urgency=medium
 
   * Bump ABI 5.15.0-10072.79~20.04
