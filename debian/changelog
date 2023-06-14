@@ -1,3 +1,13 @@
+linux-meta-tuxedo-20.04-edge (5.15.0.10075.82~20.04.49) focal; urgency=medium
+
+  * Bump ABI 5.15.0-10075.82~20.04
+
+  * Packaging resync (LP: #1786013)
+    - TUXEDO: [Packaging] resync debian/scripts/misc/git-ubuntu-log from main
+      package
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 14 Jun 2023 14:47:51 +0000
+
 linux-meta-tuxedo-20.04-edge (5.15.0.10074.81~20.04.48) focal; urgency=medium
 
   * Bump ABI 5.15.0-10074.81~20.04
