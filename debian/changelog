@@ -1,3 +1,9 @@
+linux-meta-tuxedo-22.04-next (6.2.0.10019.36) focal; urgency=medium
+
+  * Bump ABI 6.2.0-10019
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 15 Aug 2023 08:53:04 +0000
+
 linux-meta-tuxedo-22.04-next (6.2.0.10018.35) focal; urgency=medium
 
   * Bump ABI 6.2.0-10018
