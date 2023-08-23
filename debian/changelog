@@ -1,3 +1,12 @@
+linux-meta-tuxedo-22.04 (6.2.0.10021.67) focal; urgency=medium
+
+  * Bump ABI 6.2.0-10021
+
+  * Miscellaneous upstream changes
+    - Fix wrong maintainer in control
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 23 Aug 2023 19:03:40 +0200
+
 linux-meta-tuxedo-22.04 (6.2.0.10020.66) focal; urgency=medium
 
   * Bump ABI 6.2.0-10020
