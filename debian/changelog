@@ -1,3 +1,12 @@
+linux-meta-tuxedo-20.04 (5.15.0.10082.91~20.04.57) focal; urgency=medium
+
+  * Bump ABI 5.15.0-10082.91~20.04
+
+  * Miscellaneous upstream changes
+    - Fix missing git url
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 23 Aug 2023 15:12:23 +0200
+
 linux-meta-tuxedo-20.04 (5.15.0.10079.86~20.04.56) focal; urgency=medium
 
   * Bump ABI 5.15.0-10079.86~20.04
