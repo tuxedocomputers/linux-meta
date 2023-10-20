@@ -2,7 +2,7 @@
 
 set -ex
 
-MAINLINE_KERNEL_VERSION=6.2
+MAINLINE_KERNEL_VERSION=6.5
 
 echo "===Starting auto-update.==="
 
