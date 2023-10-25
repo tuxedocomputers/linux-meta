@@ -8,4 +8,4 @@ Build-Depends-Arch:
  @KERNEL_SOURCE@-headers-@KERNEL_ABI_VERSION@,
  linux-headers-@KERNEL_ABI_VERSION@-tuxedo,
  linux-modules-@KERNEL_ABI_VERSION@-tuxedo,
-Vcs-Git: https://github.com/tuxedocomputers/linux-meta.git tuxedo-22.04
+Vcs-Git: https://github.com/tuxedocomputers/linux-meta.git tuxedo-20.04
