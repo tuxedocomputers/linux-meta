@@ -2,6 +2,8 @@ Package: linux-headers-tuxedo-22.04
 Architecture: amd64
 Section: kernel
 Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-tuxedo
+Replaces: linux-headers-tuxedo-22.04-edge (<< 6.2.0.10020.31~), linux-headers-tuxedo-22.04-next (<< 6.2.0.10020.37~)
+Breaks: linux-headers-tuxedo-22.04-edge (<< 6.2.0.10020.31~), linux-headers-tuxedo-22.04-next (<< 6.2.0.10020.37~)
 Description: TUXEDO selected Linux kernel headers
  This package is one of the kernel packages that are offically supported on
  TUXEDO devices unless otherwise stated.
@@ -12,6 +14,8 @@ Section: kernel
 Provides: ${dkms:v4l2loopback-modules} ${dkms:zfs-modules} ${dkms:virtualbox-guest-modules} ${dkms:wireguard-linux-compat-modules}
 Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-tuxedo | linux-image-unsigned-${kernel-abi-version}-tuxedo, linux-modules-extra-${kernel-abi-version}-tuxedo [amd64], linux-firmware [amd64], intel-microcode [amd64], amd64-microcode [amd64]
 Recommends: thermald [amd64]
+Replaces: linux-image-tuxedo-22.04-edge (<< 6.2.0.10020.31~), linux-image-tuxedo-22.04-next (<< 6.2.0.10020.37~)
+Breaks: linux-image-tuxedo-22.04-edge (<< 6.2.0.10020.31~), linux-image-tuxedo-22.04-next (<< 6.2.0.10020.37~)
 Description: TUXEDO selected Linux kernel image
  This package is one of the kernel packages that are offically supported on
  TUXEDO devices unless otherwise stated.
@@ -21,6 +25,8 @@ Architecture: amd64
 Section: kernel
 Provides: linux-tools
 Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-tuxedo
+Replaces: linux-tools-tuxedo-22.04-edge (<< 6.2.0.10020.31~), linux-tools-tuxedo-22.04-next (<< 6.2.0.10020.37~)
+Breaks: linux-tools-tuxedo-22.04-edge (<< 6.2.0.10020.31~), linux-tools-tuxedo-22.04-next (<< 6.2.0.10020.37~)
 Description: TUXEDO selected Linux kernel tools
  This package is one of the kernel packages that are offically supported on
  TUXEDO devices unless otherwise stated.
@@ -30,6 +36,8 @@ Architecture: amd64
 Section: kernel
 Provides: linux-cloud-tools
 Depends: ${misc:Depends}, linux-cloud-tools-${kernel-abi-version}-tuxedo
+Replaces: linux-cloud-tools-tuxedo-22.04-edge (<< 6.2.0.10020.31~), linux-cloud-tools-tuxedo-22.04-next (<< 6.2.0.10020.37~)
+Breaks: linux-cloud-tools-tuxedo-22.04-edge (<< 6.2.0.10020.31~), linux-cloud-tools-tuxedo-22.04-next (<< 6.2.0.10020.37~)
 Description: TUXEDO selected Linux kernel cloud tools
  This package is one of the kernel packages that are offically supported on
  TUXEDO devices unless otherwise stated.
@@ -39,6 +47,8 @@ Architecture: amd64
 Section: kernel
 Provides: ${test:provides-full-tuxedo-22.04} ${test:provides-full-preferred}
 Depends: ${misc:Depends}, linux-image-tuxedo-22.04 (= ${binary:Version}), linux-headers-tuxedo-22.04 (= ${binary:Version})
+Replaces: linux-tuxedo-22.04-edge (<< 6.2.0.10020.31~), linux-tuxedo-22.04-next (<< 6.2.0.10020.37~)
+Breaks: linux-tuxedo-22.04-edge (<< 6.2.0.10020.31~), linux-tuxedo-22.04-next (<< 6.2.0.10020.37~)
 Description: Complete TUXEDO selected Linux kernel and headers
  This package is one of the kernel packages that are offically supported on
  TUXEDO devices unless otherwise stated.
