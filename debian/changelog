@@ -1,3 +1,14 @@
+linux-meta-tuxedo-20.04 (5.15.0.10089.99~20.04.64) focal; urgency=medium
+
+  * Bump ABI 5.15.0-10089.99~20.04
+
+  * Miscellaneous upstream changes
+    - Fix source reference
+    - Correctly add replaces and breaks for transitional packages
+    - Add control files for transitional packages
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 02 Nov 2023 22:23:24 +0000
+
 linux-meta-tuxedo-20.04 (5.15.0.10088.98~20.04.63) focal; urgency=medium
 
   * Bump ABI 5.15.0-10088.98~20.04
