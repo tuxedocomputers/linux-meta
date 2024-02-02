@@ -1,3 +1,13 @@
+linux-meta-tuxedo-20.04 (5.15.0.10092.102~20.04.66) focal; urgency=medium
+
+  * Bump ABI 5.15.0-10092.102~20.04
+
+  * Miscellaneous upstream changes
+    - Use new docker image name
+    - Rename CI variable to avoid confusion
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 02 Feb 2024 15:48:02 +0100
+
 linux-meta-tuxedo-20.04 (5.15.0.10091.101~20.04.65) focal; urgency=medium
 
   * Bump ABI 5.15.0-10091.101~20.04
