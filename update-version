@@ -39,11 +39,11 @@ fi
 
 # Update things from the primary package.
 for thing in \
-	debian/dkms-versions \
+	$branch/dkms-versions \
 	debian/scripts/misc/git-ubuntu-log
 do
 	from="$master_dir/$thing"
-	to="$thing"
+	to="${thing/$branch/debian}"
 
 	if [ -f "$from" ]; then
 		cp -p "$from" "$to" || exit 1
