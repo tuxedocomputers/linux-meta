@@ -48,9 +48,9 @@ do
 	if [ -f "$from" ]; then
 		cp -p "$from" "$to" || exit 1
 		git add "$to" || exit 1
-	else
-		rm -f "$to"
-		git rm --ignore-unmatch "$to" || exit 1
+# 	else
+# 		rm -f "$to"
+# 		git rm --ignore-unmatch "$to" || exit 1
 	fi
 	if ! git diff --exit-code HEAD -- "$thing" >/dev/null; then
 		msg="TUXEDO: [Packaging] resync $thing from main package
