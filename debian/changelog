@@ -1,3 +1,12 @@
+linux-meta-tuxedo-20.04 (5.15.0.10103.113~20.04.73) focal; urgency=medium
+
+  * Bump ABI 5.15.0-10103.113~20.04
+
+  * Miscellaneous upstream changes
+    - Copy dkms-versions from new location
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 03 Apr 2024 23:25:24 +0000
+
 linux-meta-tuxedo-20.04 (5.15.0.10102.112~20.04.72) focal; urgency=medium
 
   * Miscellaneous upstream changes
