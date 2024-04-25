@@ -1,0 +1,48 @@
+#!/bin/bash
+
+set -ex
+
+MAINLINE_KERNEL_VERSION=6.8
+UBUNTU_VERSION=24.04
+
+echo "===Starting auto-update.==="
+
+SCRIPT=$(realpath "${0}")
+SCRIPTPATH=$(dirname "${SCRIPT}")
+cd "${SCRIPTPATH}"
+
+echo "===Get current version.==="
+
+TUXEDO_KERNEL_BRANCH=tuxedo-${MAINLINE_KERNEL_VERSION}
+TUXEDO_KERNEL_BRANCH_FULL=${TUXEDO_KERNEL_BRANCH}-${UBUNTU_VERSION}
+ESCAPED_UBUNTU_VERSION=${UBUNTU_VERSION%%.*}\\.${UBUNTU_VERSION##*.}
+
+CURRENT_VERSION=$(grep --perl-regexp --only-matching --max-count 1 "(?<=^linux-meta-tuxedo-${ESCAPED_UBUNTU_VERSION} \().*(?=\))" debian/changelog)
+
+echo "===Checking out correct Ubuntu kernel.==="
+
+if ! [[ ${LINUX_REPO_URL} ]]; then
+    LINUX_REPO_URL="https://github.com/tuxedocomputers/linux.git"
+fi
+rm -rf ../linux-for-linux-meta
+git clone --branch ${TUXEDO_KERNEL_BRANCH_FULL} ${LINUX_REPO_URL} ../linux-for-linux-meta
+git -C ../linux-for-linux-meta fetch --tags
+
+if [[ ${1} ]]; then
+    NEW_TAG=${1}
+else
+    NEW_TAG=$(git -C ../linux-for-linux-meta describe --abbrev=0)
+fi
+NEW_VERSION=${NEW_TAG#Ubuntu-"${TUXEDO_KERNEL_BRANCH}"-}
+
+if [[ ${CURRENT_VERSION} == "${NEW_VERSION}" ]]; then
+    echo "===Version already up to date. Exiting.==="
+    exit
+fi
+
+git -C ../linux-for-linux-meta checkout "${NEW_TAG}"
+
+echo "===Run update script.==="
+./update-version --commit ../linux-for-linux-meta
+
+echo "===Done.==="
