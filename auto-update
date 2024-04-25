@@ -1,0 +1,44 @@
+#!/bin/bash
+
+set -ex
+
+MAINLINE_KERNEL_VERSION=6.5
+
+echo "===Starting auto-update.==="
+
+SCRIPT=$(realpath "$0")
+SCRIPTPATH=$(dirname "$SCRIPT")
+cd "$SCRIPTPATH"
+
+echo "===Get current version.==="
+
+CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04 \().*(?=\))' debian/changelog || true)
+CURRENT_ABI=${CURRENT_VERSION%.*}
+
+echo "Current Version Base: $CURRENT_ABI"
+
+echo "===Start metapackage update.==="
+
+echo "===Checking out correct Ubuntu kernel.==="
+if [ -z $LINUX_REPO_URL ]; then
+    LINUX_REPO_URL="https://github.com/tuxedocomputers/linux.git"
+fi
+rm -rf ../linux-for-linux-meta
+git clone --branch tuxedo-$MAINLINE_KERNEL_VERSION-22.04 $LINUX_REPO_URL ../linux-for-linux-meta
+git -C ../linux-for-linux-meta fetch --tags
+NEWEST_VERSION_TAG=$(git -C ../linux-for-linux-meta describe --abbrev=0)
+NEWEST_VERSION=${NEWEST_VERSION_TAG#Ubuntu-tuxedo-$MAINLINE_KERNEL_VERSION-}
+NEWEST_VERSION_ABI=${NEWEST_VERSION%.*}
+NEWEST_VERSION_ABI_NORMALIZED=$(echo $NEWEST_VERSION_ABI | tr '-' '.')
+
+if [ $CURRENT_ABI = $NEWEST_VERSION_ABI_NORMALIZED ]; then
+    echo "===Version already up to date. Exiting.==="
+    exit
+fi
+
+git -C ../linux-for-linux-meta checkout $NEWEST_VERSION_TAG
+
+echo "===Run update script.==="
+./update-version ../linux-for-linux-meta auto-commit
+
+echo "===Done.==="
