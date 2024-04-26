@@ -1,3 +1,13 @@
+linux-meta-tuxedo-24.04 (6.8.0-100030.30tux1) noble; urgency=medium
+
+  * Master version: 6.8.0-100030.30tux1
+
+  * Miscellaneous upstream changes
+    - TUXEDO: Edit debian directory
+    - TUXEDO: Add automation scripts
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 26 Apr 2024 12:10:38 +0200
+
 linux-meta (6.8.0-30.30) noble; urgency=medium
 
   * Main version: 6.8.0-30.30
