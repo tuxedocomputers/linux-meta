@@ -15,9 +15,8 @@ echo "===Get current version.==="
 
 TUXEDO_KERNEL_BRANCH=tuxedo-${MAINLINE_KERNEL_VERSION}
 TUXEDO_KERNEL_BRANCH_FULL=${TUXEDO_KERNEL_BRANCH}-${UBUNTU_VERSION}
-ESCAPED_UBUNTU_VERSION=${UBUNTU_VERSION%%.*}\\.${UBUNTU_VERSION##*.}
 
-CURRENT_VERSION=$(grep --perl-regexp --only-matching --max-count 1 "(?<=^linux-meta-tuxedo-${ESCAPED_UBUNTU_VERSION} \().*(?=\))" debian/changelog)
+CURRENT_VERSION=$(grep --perl-regexp --only-matching --max-count 1 "(?<=^linux-meta-tuxedo-${UBUNTU_VERSION} \().*(?=\))" debian/changelog)
 
 echo "===Checking out correct Ubuntu kernel.==="
 
