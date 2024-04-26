@@ -1,3 +1,13 @@
+linux-meta-tuxedo-24.04 (6.8.0-100030.30tux3) noble; urgency=medium
+
+  * Master version: 6.8.0-100030.30tux3
+
+  * Miscellaneous upstream changes
+    - TUXEDO: Remove unnecessary manual escape to reduce complexity
+    - TUXEDO: Beautify comments
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 26 Apr 2024 18:32:04 +0000
+
 linux-meta-tuxedo-24.04 (6.8.0-100030.30tux2) noble; urgency=medium
 
   * Master version: 6.8.0-100030.30tux2
