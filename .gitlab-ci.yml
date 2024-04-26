@@ -1,5 +1,5 @@
 default:
-    # Custom docker image: ubuntu:noble with some stuff preinstalled
+    # Custom docker image: ubuntu:noble with build dependencies preinstalled.
     image: linux-builder-noble
 
     before_script:
@@ -12,7 +12,8 @@ default:
         - export DEBFULLNAME="Tuxedo BOT"
         - export DEBEMAIL="tux@tuxedocomputers.com"
 
-        # Set token based checkout url for the internal gitlab repository, this and the public github repository are 1 to 1 mirrors on all branches used here.
+        # Set token based checkout url for the internal gitlab repository, this and the public
+        # github repository are 1 to 1 mirrors on all branches used here.
         - export LINUX_REPO_URL="https://${TUXEDO_BOT_GITLAB_USERNAME}:${TUXEDO_BOT_GITLAB_CI_PERSONAL_ACCESS_TOKEN}@${LINUX_REPO_CLONE_URL_HTTPS#https://}"
 
 variables:
@@ -21,8 +22,8 @@ variables:
     GIT_STRATEGY: clone
 
 stages:
-    # The update job is not run on the same commit as the build, and deploy jobs. It's included in this
-    # explicit order here purely to make the CI script more readable.
+    # The update job is not run on the same commit as the build, and deploy jobs. It's included in
+    # this explicit order here purely to make the CI script more readable.
     - update
     - build
     - deploy
