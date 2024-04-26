@@ -2,43 +2,49 @@
 
 set -ex
 
-MAINLINE_KERNEL_VERSION=6.5
+MAINLINE_KERNEL_VERSION=6.8
+UBUNTU_VERSION=24.04
 
 echo "===Starting auto-update.==="
 
-SCRIPT=$(realpath "$0")
-SCRIPTPATH=$(dirname "$SCRIPT")
-cd "$SCRIPTPATH"
+SCRIPT=$(realpath "${0}")
+SCRIPTPATH=$(dirname "${SCRIPT}")
+cd "${SCRIPTPATH}"
 
 echo "===Get current version.==="
 
-CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04 \().*(?=\))' debian/changelog || true)
+TUXEDO_KERNEL_BRANCH=tuxedo-${MAINLINE_KERNEL_VERSION}
+ESCAPED_TUXEDO_KERNEL_BRANCH=tuxedo-${MAINLINE_KERNEL_VERSION%%.*}\\.${MAINLINE_KERNEL_VERSION##*.}
+TUXEDO_KERNEL_BRANCH_FULL=${TUXEDO_KERNEL_BRANCH}-${UBUNTU_VERSION}
+
+CURRENT_VERSION=$(grep --perl-regexp --only-matching --max-count 1 "(?<=^linux-meta-"${TUXEDO_KERNEL_BRANCH}" \().*(?=\))" debian/changelog)
 CURRENT_ABI=${CURRENT_VERSION%.*}
 
-echo "Current Version Base: $CURRENT_ABI"
-
-echo "===Start metapackage update.==="
-
 echo "===Checking out correct Ubuntu kernel.==="
-if [ -z $LINUX_REPO_URL ]; then
+
+if ! [[ ${LINUX_REPO_URL} ]]; then
     LINUX_REPO_URL="https://github.com/tuxedocomputers/linux.git"
 fi
 rm -rf ../linux-for-linux-meta
-git clone --branch tuxedo-$MAINLINE_KERNEL_VERSION-22.04 $LINUX_REPO_URL ../linux-for-linux-meta
+git clone --branch ${TUXEDO_KERNEL_BRANCH_FULL} ${LINUX_REPO_URL} ../linux-for-linux-meta
 git -C ../linux-for-linux-meta fetch --tags
-NEWEST_VERSION_TAG=$(git -C ../linux-for-linux-meta describe --abbrev=0)
-NEWEST_VERSION=${NEWEST_VERSION_TAG#Ubuntu-tuxedo-$MAINLINE_KERNEL_VERSION-}
-NEWEST_VERSION_ABI=${NEWEST_VERSION%.*}
-NEWEST_VERSION_ABI_NORMALIZED=$(echo $NEWEST_VERSION_ABI | tr '-' '.')
 
-if [ $CURRENT_ABI = $NEWEST_VERSION_ABI_NORMALIZED ]; then
+if [[ ${1} ]]; then
+    NEW_TAG=${1}
+else
+    NEW_TAG=$(git -C ../linux-for-linux-meta describe --abbrev=0)
+fi
+NEW_VERSION=${NEW_TAG#Ubuntu-"${TUXEDO_KERNEL_BRANCH}"-}
+NEW_ABI=${NEW_VERSION%.*}
+
+if [[ ${CURRENT_ABI} == "${NEW_ABI}" ]]; then
     echo "===Version already up to date. Exiting.==="
     exit
 fi
 
-git -C ../linux-for-linux-meta checkout $NEWEST_VERSION_TAG
+git -C ../linux-for-linux-meta checkout "${NEW_TAG}"
 
 echo "===Run update script.==="
-./update-version ../linux-for-linux-meta auto-commit
+./update-version --commit ../linux-for-linux-meta
 
 echo "===Done.==="
