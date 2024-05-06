@@ -1,6 +1,6 @@
 default:
     # Custom docker image: ubuntu:jammy with some stuff preinstalled, see before_script comment.
-    image: linux-meta-builder-ubuntu-jammy
+    image: linux-builder-jammy
 
     before_script:
         # This is already installed on linux-meta-builder-ubuntu-jammy docker image, but manual
