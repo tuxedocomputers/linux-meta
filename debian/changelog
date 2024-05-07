@@ -1,3 +1,12 @@
+linux-meta-tuxedo-22.04 (6.5.0.10039.109) focal; urgency=medium
+
+  * Bump ABI 6.5.0-10039
+
+  * Miscellaneous upstream changes
+    - Change docker image to build
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 07 May 2024 15:51:56 +0000
+
 linux-meta-tuxedo-22.04 (6.5.0.10038.108) focal; urgency=medium
 
   * Bump ABI 6.5.0-10038
