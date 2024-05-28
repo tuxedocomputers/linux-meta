@@ -1,3 +1,16 @@
+linux-meta-unstable (6.10.0-1.1) oracular; urgency=medium
+
+  * Main version: 6.10.0-1.1
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] update variants
+    - [Packaging] debian/dkms-versions -- resync from main package
+
+  * Miscellaneous Ubuntu changes
+    - move to unstable, 6.10 and oracular
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Tue, 28 May 2024 18:05:23 +0200
+
 linux-meta-unstable (6.10.0-0.0) oracular; urgency=medium
 
   * Empty entry
