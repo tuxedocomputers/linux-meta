@@ -79,10 +79,75 @@ deploy:
         # Build after new tag has been pushed.
         - tags
 
+    variables:
+        # This job does not need a clean working directory.
+        GIT_STRATEGY: fetch
+
+        # Defines subfolder for flat apt testing repo
+        UBUNTU_CODENAME: jammy
+
     script:
+        # create new key and cert based on ca
+        - curl -s https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer | bash
+        - openssl genrsa -out .secure_files/ci_job.key 4096
+        - openssl req -new -key .secure_files/ci_job.key -out .secure_files/ci_job.csr -subj "/CN=deb"
+        - openssl x509 -req -days 1 -in .secure_files/ci_job.csr -CA .secure_files/static.ca.deb.crt -CAkey .secure_files/static.ca.deb.key -set_serial 01 -out .secure_files/ci_job.crt
+
         # Get version number.
         - CURRENT_VERSION=$(grep -Pom1 '(?<=^linux-meta-tuxedo-22.04 \().*(?=\))' debian/changelog)
 
         # Upload to new folder on internal Nextcould.
         - curl -X MKCOL $TUXEDO_BOT_WEBDAV_LINUX_META_22_04_BASE_FOLDER_URL/$CURRENT_VERSION --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD
         - find output/* -exec curl -T '{}' $TUXEDO_BOT_WEBDAV_LINUX_META_22_04_BASE_FOLDER_URL/$CURRENT_VERSION/ --user $TUXEDO_BOT_NEXTCLOUD_USERNAME:$TUXEDO_BOT_NEXTCLOUD_PASSWORD \;
+
+        # Upload to flat apt testing repo
+        - WEBDAV_DIR_URL="https://deb.static.tuxedocomputers.com/linux"
+        - WEBDAV_DIR_URL_HTTP="http://static.tuxedocomputers.com/deb/linux"
+
+        - |
+            http_status=$(curl -i --cert .secure_files/ci_job.crt --key .secure_files/ci_job.key -w "%{http_code}" -o /dev/null $WEBDAV_DIR_URL/)
+            if [[ ! "$http_status" =~ ^2[0-9][0-9]$ ]]; then
+                curl -i --cert .secure_files/ci_job.crt --key .secure_files/ci_job.key $WEBDAV_DIR_URL
+                exit 1
+            fi
+
+        - |
+            http_status=$(curl -i --cert .secure_files/ci_job.crt --key .secure_files/ci_job.key -w "%{http_code}" -o /dev/null $WEBDAV_DIR_URL/$UBUNTU_CODENAME/)
+            if [[ ! "$http_status" =~ ^2[0-9][0-9]$ ]]; then
+                curl -i --cert .secure_files/ci_job.crt --key .secure_files/ci_job.key $WEBDAV_DIR_URL
+                exit 1
+            fi
+
+        - |
+            http_status=$(curl -i --cert .secure_files/ci_job.crt --key .secure_files/ci_job.key -w "%{http_code}" -o /dev/null $WEBDAV_DIR_URL/$UBUNTU_CODENAME/$CURRENT_VERSION/)
+            if [[ ! "$http_status" =~ ^2[0-9][0-9]$ ]]; then
+                curl -i --cert .secure_files/ci_job.crt --key .secure_files/ci_job.key $WEBDAV_DIR_URL
+                exit 1
+            fi
+
+        - cd output
+        - dpkg-scanpackages . /dev/null | xz -9 > Packages.xz
+
+        - |
+            for file in Packages.xz *.deb; do
+                response=$(curl -T "$file" --cert .secure_files/ci_job.crt --key .secure_files/ci_job.key -X PUT -w "%{http_code}" -o /dev/null -s $WEBDAV_DIR_URL/$UBUNTU_CODENAME/$CURRENT_VERSION/"$file"_tmp)
+
+                if [[ ! "$http_status" =~ ^2[0-9][0-9]$ ]]; then
+                echo "Failed to upload $file. HTTP status: $response"
+                exit 1
+                else
+                echo "Successfully uploaded $file"
+                fi
+            done
+
+        - |
+            for file in Packages.xz *.deb; do
+                response_mv=$(curl --cert .secure_files/ci_job.crt --key .secure_files/ci_job.key -X MOVE -w "%{http_code}" -o /dev/null -s --header "Destination: $WEBDAV_DIR_URL_HTTP/$UBUNTU_CODENAME/$CURRENT_VERSION/$file" --header "Overwrite: T" "$WEBDAV_DIR_URL/$UBUNTU_CODENAME/$CURRENT_VERSION/$file"_tmp)
+
+                if [[ ! "$http_status" =~ ^2[0-9][0-9]$ ]]; then
+                echo "Failed to copy $file. HTTP status: $response_mv"
+                exit 1
+                else
+                echo "Successfully copied $file"
+                fi
+            done
