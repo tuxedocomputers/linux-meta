@@ -1,3 +1,9 @@
+linux-meta-unstable (6.10.0-5.5) oracular; urgency=medium
+
+  * Main version: 6.10.0-5.5
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Tue, 11 Jun 2024 12:36:58 +0200
+
 linux-meta-unstable (6.10.0-4.4) oracular; urgency=medium
 
   * Main version: 6.10.0-4.4
