@@ -1,3 +1,12 @@
+linux-meta-unstable (6.10.0-13.13) oracular; urgency=medium
+
+  * Main version: 6.10.0-13.13
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] debian/dkms-versions -- resync from main package
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Mon, 01 Jul 2024 13:35:11 +0200
+
 linux-meta-unstable (6.10.0-12.12) oracular; urgency=medium
 
   * Main version: 6.10.0-12.12
