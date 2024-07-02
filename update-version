@@ -52,11 +52,11 @@ do
 		rm -f "$to"
 		git rm --ignore-unmatch "$to" || exit 1
 	fi
-	if ! git diff --exit-code HEAD -- "$thing" >/dev/null; then
-		msg="TUXEDO: [Packaging] resync $thing from main package
+	if ! git diff --exit-code HEAD -- "$to" >/dev/null; then
+		msg="TUXEDO: [Packaging] resync $to from main package
 
 BugLink: http://bugs.launchpad.net/bugs/1786013"
-		git commit -m "$msg" -s -- "$thing"
+		git commit -m "$msg" -s -- "$to"
 	else
 		echo "$thing: no changes from master"
 	fi
