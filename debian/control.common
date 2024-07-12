@@ -1,7 +1,7 @@
 Source: @SRCPKGNAME@
 Section: devel
 Priority: optional
-Maintainer: TUXEDO Computers GmbH <tux@tuxedocomputers.com>
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
 Standards-Version: 3.9.8
-Build-Depends: dpkg (>= 1.13.19), debhelper (>= 9), gawk, kmod
-Vcs-Git: https://github.com/tuxedocomputers/linux-meta.git tuxedo-22.04
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 9), gawk
+Vcs-Git: git://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta/+git/@SERIES@

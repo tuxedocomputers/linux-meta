@@ -2,7 +2,7 @@
 
 set -ex
 
-MAINLINE_KERNEL_VERSION=6.5
+MAINLINE_KERNEL_VERSION=6.8
 UBUNTU_VERSION=22.04
 
 echo "===Starting auto-update.==="
@@ -42,6 +42,6 @@ fi
 git -C ../linux-for-linux-meta checkout "${NEW_TAG}"
 
 echo "===Run update script.==="
-./update-version ../linux-for-linux-meta auto-commit
+./update-version --commit ../linux-for-linux-meta
 
 echo "===Done.==="

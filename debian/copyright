@@ -1,11 +1,10 @@
-This is the TUXEDO Computers GmbH prepackaged version of the Linux kernel
-based on the Debian GNU/Linux prepackaged version of the Linux kernel.
+This is the Debian GNU/Linux prepackaged version of the Linux kernel.
 Linux was written by Linus Torvalds <Linus.Torvalds@cs.Helsinki.FI>
 and others.
 
-This package was put together by TUXEDO Computers GmbH, based on sources by
-Simon Shapiro <Shimon@i-Connect.Net>, from sources retrieved from
-directories under ftp.cs.helsinki.fi:/pub/Software/Linux/Kernel/
+This package was put together by Simon Shapiro <Shimon@i-Connect.Net>, from
+sources retrieved from directories under
+ftp.cs.helsinki.fi:/pub/Software/Linux/Kernel/
 The sources may be found at most Linux ftp sites, including 
 ftp://ftp.kernel.org/pub/linux/kernel/
 
@@ -19,9 +18,6 @@ Debian Kernel Team <debian-kernel@lists.debian.org>
 
 This package was split off by Herbert Xu <herbert@gondor.apana.org.au>
 in September 2004.
-
-This package is currently maintained by TUXEDO Computers GmbH
-<tux@tuxedocomputers.com>
 
 Linux is copyrighted by Linus Torvalds and others.
 
