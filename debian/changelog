@@ -1,3 +1,12 @@
+linux-meta-tuxedo-24.04 (6.8.0-104038.38tux5) noble; urgency=medium
+
+  * Master version: 6.8.0-104038.38tux5
+
+  * Miscellaneous upstream changes
+    - Fix naming convention issues
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 12 Jul 2024 17:55:18 +0000
+
 linux-meta-tuxedo-24.04 (6.8.0-104038.38tux4) noble; urgency=medium
 
   * Master version: 6.8.0-104038.38tux4
