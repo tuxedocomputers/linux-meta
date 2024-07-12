@@ -1,3 +1,12 @@
+linux-meta-tuxedo-22.04 (6.8.0-100038.38~22.04.1tux2) focal; urgency=medium
+
+  * Master version: 6.8.0-100038.38~22.04.1tux2
+
+  * Miscellaneous upstream changes
+    - Update debian directory for 6.8
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 12 Jul 2024 18:31:45 +0200
+
 linux-meta-tuxedo-22.04 (6.5.0.100044.44~22.04.116) focal; urgency=medium
 
   * Bump ABI 6.5.0-100044.44~22.04
