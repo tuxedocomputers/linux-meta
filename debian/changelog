@@ -1,3 +1,10 @@
+linux-meta-tuxedo-20.04 (5.15.0.10116.126~20.04.82) focal; urgency=medium
+
+  * Miscellaneous upstream changes
+    - Add deploy to internal flat apt testing repo
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 15 Jul 2024 17:17:35 +0200
+
 linux-meta-tuxedo-20.04 (5.15.0.10116.126~20.04.81) focal; urgency=medium
 
   * Bump ABI 5.15.0-10116.126~20.04
