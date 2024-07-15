@@ -1,3 +1,10 @@
+linux-meta-tuxedo-24.04 (6.8.0-104038.38tux5+1) noble; urgency=medium
+
+  * Miscellaneous upstream changes
+    - Add deploy to internal flat apt testing repo
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 15 Jul 2024 17:12:52 +0200
+
 linux-meta-tuxedo-24.04 (6.8.0-104038.38tux5) noble; urgency=medium
 
   * Master version: 6.8.0-104038.38tux5
