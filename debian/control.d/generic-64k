@@ -35,3 +35,15 @@ Description: Complete Generic 64K Linux kernel and headers
  This package will always depend on the latest complete generic-64k Linux kernel
  and headers.
 
+Package: linux-lowlatency-64k${variant:suffix}
+Architecture: arm64
+Section: kernel
+Provides: ${test:provides-full-lowlatency-64k}, kernel-supports-lowlatency-bootargs,
+Depends: ${misc:Depends}, linux-image-generic-64k${variant:suffix} (= ${binary:Version}), linux-headers-generic-64k${variant:suffix} (= ${binary:Version}),
+ lowlatency-kernel,
+Recommends: linux-tools-${kernel-abi-version}-generic-64k, ubuntu-kernel-accessories
+Description: Complete Generic 64K Linux kernel and headers with lowlatency boot configuration
+ This package will always depend on the latest complete generic-64k Linux kernel
+ and headers. Additionally, it will install the lowlatency-kernel package to
+ enable kernel boot arguments tuned for latency-sensitive applications.
+
