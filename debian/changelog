@@ -1,3 +1,10 @@
+linux-meta-tuxedo-22.04 (6.8.0-100039.39~22.04.1tux2+2) focal; urgency=medium
+
+  * Miscellaneous upstream changes
+    - Make -edge from a transitional to an actual package again
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 06 Aug 2024 17:06:11 +0200
+
 linux-meta-tuxedo-22.04 (6.8.0-100039.39~22.04.1tux2+1) focal; urgency=medium
 
   * Miscellaneous upstream changes
