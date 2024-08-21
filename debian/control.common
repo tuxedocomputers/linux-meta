@@ -9,3 +9,11 @@ Build-Depends-Arch:
  linux-headers-@KERNEL_ABI_VERSION@-tuxedo,
  linux-modules-@KERNEL_ABI_VERSION@-tuxedo,
 Vcs-Git: https://github.com/tuxedocomputers/linux-meta.git tuxedo-20.04
+
+Package: linux-tuxedo
+Architecture: amd64 armhf arm64 ppc64el s390x
+Section: kernel
+Depends: linux-tuxedo-20.04
+Description: Complete TUXEDO Linux kernel and headers generic package name
+ This package will always depend on the package that depends on the latest
+ complete TUXEDO Linux kernel and headers.
