@@ -54,4 +54,3 @@ Recommends: linux-tools-${kernel-abi-version}-tuxedo, ubuntu-kernel-accessories
 Description: Complete TUXEDO Linux kernel and headers
  This package will always depend on the latest complete TUXEDO Linux kernel
  and headers.
-
