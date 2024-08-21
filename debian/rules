@@ -30,9 +30,9 @@ control_files := debian/control.common
 # control files only wanted for the primary variant
 primary_control_files := $(shell LC_ALL=C ls -d debian/control.d/primary debian/control.d/transitionals-* 2>/dev/null)
 dkms_control_files :=
-ifneq ($(filter --,$(variants)),)
+#ifneq ($(filter --,$(variants)),)
 	control_files += $(primary_control_files)
-endif
+#endif
 control_files += $(filter-out $(primary_control_files) $(wildcard debian/control.d/dkms-*),$(shell LC_ALL=C ls -d debian/control.d/*))
 
 SHELL := sh -e
