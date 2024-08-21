@@ -5,3 +5,11 @@ Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
 Standards-Version: 3.9.8
 Build-Depends: dpkg (>= 1.13.19), debhelper (>= 9), gawk
 Vcs-Git: git://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-meta/+git/@SERIES@
+
+Package: linux-tuxedo
+Architecture: amd64 armhf arm64 ppc64el s390x
+Section: kernel
+Depends: linux-tuxedo-24.04
+Description: Complete TUXEDO Linux kernel and headers generic package name
+ This package will always depend on the package that depends on the latest
+ complete TUXEDO Linux kernel and headers.
