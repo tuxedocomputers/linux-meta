@@ -1,3 +1,11 @@
+linux-meta-tuxedo-20.04 (5.15.0.10121.131~20.04.87) focal; urgency=medium
+
+  * Miscellaneous upstream changes
+    - Generate tuxedo transitionals
+    - Add generic named package
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 21 Aug 2024 15:16:34 +0200
+
 linux-meta-tuxedo-20.04 (5.15.0.10121.131~20.04.86) focal; urgency=medium
 
   * Bump ABI 5.15.0-10121.131~20.04
