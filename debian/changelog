@@ -1,3 +1,10 @@
+linux-meta-tuxedo-20.04 (5.15.0.10121.131~20.04.88) focal; urgency=medium
+
+  * Miscellaneous upstream changes
+    - Remove unnecessary build depends
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 21 Aug 2024 15:21:04 +0200
+
 linux-meta-tuxedo-20.04 (5.15.0.10121.131~20.04.87) focal; urgency=medium
 
   * Miscellaneous upstream changes
