@@ -1,3 +1,9 @@
+linux-meta-tuxedo-22.04 (6.8.0-101044.44~22.04.1tux1) focal; urgency=medium
+
+  * Master version: 6.8.0-101044.44~22.04.1tux1
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 22 Aug 2024 17:46:33 +0000
+
 linux-meta-tuxedo-22.04 (6.8.0-101041.41~22.04.1tux1) focal; urgency=medium
 
   * Master version: 6.8.0-101041.41~22.04.1tux1
