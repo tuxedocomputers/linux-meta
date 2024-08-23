@@ -1,0 +1,39 @@
+#
+# Generated using kteam-tools script:
+# generate-transitions --input ../tuxedo-22.04-edge/debian/control --output debian/control.d/transitionals-tuxedo-22.04-edge tuxedo-22.04-edge$ tuxedo-22.04
+#
+Package: linux-headers-tuxedo-22.04-edge
+Architecture: amd64
+Section: oldlibs
+Depends: linux-headers-tuxedo-22.04
+Description: TUXEDO selected Linux kernel headers (dummy transitional package)
+ Transitional package for upgrades. This package can be safely removed.
+
+Package: linux-image-tuxedo-22.04-edge
+Architecture: amd64
+Section: oldlibs
+Depends: linux-image-tuxedo-22.04
+Description: TUXEDO selected Linux kernel image (dummy transitional package)
+ Transitional package for upgrades. This package can be safely removed.
+
+Package: linux-tools-tuxedo-22.04-edge
+Architecture: amd64
+Section: oldlibs
+Depends: linux-tools-tuxedo-22.04
+Description: TUXEDO selected Linux kernel tools (dummy transitional package)
+ Transitional package for upgrades. This package can be safely removed.
+
+Package: linux-cloud-tools-tuxedo-22.04-edge
+Architecture: amd64
+Section: oldlibs
+Depends: linux-cloud-tools-tuxedo-22.04
+Description: TUXEDO selected Linux kernel cloud tools (dummy transitional package)
+ Transitional package for upgrades. This package can be safely removed.
+
+Package: linux-tuxedo-22.04-edge
+Architecture: amd64
+Section: oldlibs
+Depends: linux-tuxedo-22.04
+Description: Complete TUXEDO selected Linux kernel and headers (dummy transitional package)
+ Transitional package for upgrades. This package can be safely removed.
+
