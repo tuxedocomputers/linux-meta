@@ -1,3 +1,15 @@
+linux-meta-tuxedo-22.04 (6.11.0-100004.4tux2) focal; urgency=medium
+
+  * Master version: 6.11.0-100004.4tux2
+
+  * Miscellaneous Ubuntu changes
+    - debian/dkms-versions -- update from master
+
+  * Miscellaneous upstream changes
+    - Switch to 6.11
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 26 Aug 2024 16:56:04 +0200
+
 linux-meta-tuxedo-22.04 (6.8.0-101044.44~22.04.1tux1+1) focal; urgency=medium
 
   * Miscellaneous upstream changes
