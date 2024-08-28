@@ -16,17 +16,6 @@ Description: TUXEDO Linux kernel image
  This package will always depend on the latest TUXEDO kernel image
  available.
 
-Package: linux-image-uc-tuxedo${variant:suffix}
-Architecture: amd64 arm64
-Section: kernel
-Depends: ${misc:Depends}, linux-image-uc-${kernel-abi-version}-tuxedo, linux-modules-extra-${kernel-abi-version}-tuxedo, linux-firmware, firmware-sof-signed [amd64], wireless-regdb
-Description: TUXEDO Linux kernel image for Ubuntu Core
- This package will always depend on the latest TUXEDO kernel image
- available.
- .
- This kernel is suitable for staging into a kernel snap, and is not
- suitable to be used directly on classic systems.
-
 Package: linux-tools-tuxedo${variant:suffix}
 Architecture: amd64 armhf arm64 ppc64el s390x
 Section: kernel
