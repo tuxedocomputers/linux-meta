@@ -1,3 +1,10 @@
+linux-meta-tuxedo-24.04 (6.8.0-105044.44tux1+1) noble; urgency=medium
+
+  * Miscellaneous upstream changes
+    - Remove unused ubuntu core meta package
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 28 Aug 2024 09:00:01 +0000
+
 linux-meta-tuxedo-24.04 (6.8.0-105044.44tux1) noble; urgency=medium
 
   * Master version: 6.8.0-105044.44tux1
