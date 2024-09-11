@@ -1,3 +1,12 @@
+linux-meta-tuxedo-22.04 (6.11.0-102006.6tuxjammy1) focal; urgency=medium
+
+  * Master version: 6.11.0-102006.6tuxjammy1
+
+  * Miscellaneous Ubuntu changes
+    - debian/dkms-versions -- update from master
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 11 Sep 2024 01:34:15 +0000
+
 linux-meta-tuxedo-22.04 (6.11.0-100005.5tuxjammy2) focal; urgency=medium
 
   * Master version: 6.11.0-100005.5tuxjammy2
