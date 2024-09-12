@@ -2,7 +2,7 @@
 
 set -ex
 
-MAINLINE_KERNEL_VERSION=6.8
+MAINLINE_KERNEL_VERSION=6.11
 UBUNTU_VERSION=24.04
 
 echo "===Starting auto-update.==="
