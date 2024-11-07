@@ -1,3 +1,12 @@
+linux-meta-tuxedo-22.04 (6.8.0-109049.49~22.04.1tux1) focal; urgency=medium
+
+  * Master version: 6.8.0-109049.49~22.04.1tux1
+
+  * Miscellaneous Ubuntu changes
+    - debian/scripts/misc/git-ubuntu-log -- update from master
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 07 Nov 2024 01:57:02 +0000
+
 linux-meta-tuxedo-22.04 (6.8.0-109048.48~22.04.1tux1) focal; urgency=medium
 
   * Master version: 6.8.0-109048.48~22.04.1tux1
