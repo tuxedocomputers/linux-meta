@@ -1,3 +1,12 @@
+linux-meta-tuxedo-22.04 (6.8.0-109050.51~22.04.1tux1) focal; urgency=medium
+
+  * Master version: 6.8.0-109050.51~22.04.1tux1
+
+  * Miscellaneous Ubuntu changes
+    - debian/dkms-versions -- update from master
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 21 Nov 2024 18:58:27 +0000
+
 linux-meta-tuxedo-22.04 (6.8.0-109049.49~22.04.1tux1) focal; urgency=medium
 
   * Master version: 6.8.0-109049.49~22.04.1tux1
