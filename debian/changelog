@@ -1,3 +1,12 @@
+linux-meta-unstable (6.12.0-4.4) plucky; urgency=medium
+
+  * Main version: 6.12.0-4.4
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] debian/dkms-versions -- resync from main package
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Wed, 27 Nov 2024 11:50:52 +0100
+
 linux-meta-unstable (6.12.0-3.3) plucky; urgency=medium
 
   * Main version: 6.12.0-3.3
