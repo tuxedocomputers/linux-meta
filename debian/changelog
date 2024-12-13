@@ -1,3 +1,12 @@
+linux-meta-tuxedo-24.04 (6.11.0-107013.14tuxnoble2) noble; urgency=medium
+
+  * Master version: 6.11.0-107013.14tuxnoble2
+
+  * Miscellaneous Ubuntu changes
+    - debian/scripts/misc/git-ubuntu-log -- update from master
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 13 Dec 2024 16:41:59 +0000
+
 linux-meta-tuxedo-24.04 (6.11.0-107012.13tuxnoble2) noble; urgency=medium
 
   * Master version: 6.11.0-107012.13tuxnoble2
