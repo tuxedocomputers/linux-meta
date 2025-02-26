@@ -5,7 +5,7 @@ include:
 
 default:
     # Custom docker image: ubuntu:focal with git, dpkg-dev, and devscripts preinstalled.
-    image: linux-builder-focal
+    image: registry.gitlab.com/tuxedocomputers/development/installation-testing/docker-images/linux-builder:ubuntu-focal-latest
 
     before_script:
         # git, dpkg-dev, and devscripts already installed on linux-meta-builder-ubuntu docker image,
@@ -40,6 +40,9 @@ stages:
 update:
     stage: update
 
+    tags:
+        - size:medium
+
     only:
         # Don't run on every push, but only manually issued and periodically.
         - web
@@ -59,6 +62,9 @@ update:
 
 build:
     stage: build
+
+    tags:
+        - size:small
 
     only:
         # Build after new tag has been pushed.
