@@ -5,7 +5,7 @@ include:
 
 default:
     # Custom docker image: ubuntu:jammy with build dependencies preinstalled.
-    image: linux-builder-jammy
+    image: registry.gitlab.com/tuxedocomputers/development/installation-testing/docker-images/linux-builder:ubuntu-jammy-latest
 
     before_script:
         # Configure git to be able to push.
@@ -36,6 +36,9 @@ stages:
 update:
     stage: update
 
+    tags:
+        - size:medium
+
     only:
         # Don't run on every push, but only manually issued and periodically.
         - web
@@ -55,6 +58,9 @@ update:
 
 build:
     stage: build
+
+    tags:
+        - size:small
 
     only:
         # Build after new tag has been pushed.
