@@ -1,3 +1,12 @@
+linux-meta-tuxedo-22.04 (6.8.0-111056.58~22.04.1tux2) focal; urgency=medium
+
+  * Master version: 6.8.0-111056.58~22.04.1tux2
+
+  * Miscellaneous upstream changes
+    - Prepare for new gitlab runner
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 27 Feb 2025 12:04:52 +0000
+
 linux-meta-tuxedo-22.04 (6.8.0-111056.58~22.04.1tux1) focal; urgency=medium
 
   * Master version: 6.8.0-111056.58~22.04.1tux1
