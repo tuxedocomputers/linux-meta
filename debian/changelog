@@ -1,3 +1,12 @@
+linux-meta-tuxedo-24.04 (6.11.0-109021.21~24.04.1tux2) noble; urgency=medium
+
+  * Master version: 6.11.0-109021.21~24.04.1tux2
+
+  * Miscellaneous upstream changes
+    - Prepare for new gitlab runner
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 27 Feb 2025 09:55:04 +0000
+
 linux-meta-tuxedo-24.04 (6.11.0-109021.21~24.04.1tux1) noble; urgency=medium
 
   * Master version: 6.11.0-109021.21~24.04.1tux1
