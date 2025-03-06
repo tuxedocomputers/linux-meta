@@ -1,3 +1,12 @@
+linux-meta-tuxedo-20.04 (5.15.0.10132.143~20.04.96) focal; urgency=medium
+
+  * Bump ABI 5.15.0-10132.143~20.04
+
+  * Miscellaneous upstream changes
+    - Prepare for new gitlab runner
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 06 Mar 2025 09:31:33 +0000
+
 linux-meta-tuxedo-20.04 (5.15.0.10131.141~20.04.95) focal; urgency=medium
 
   * Bump ABI 5.15.0-10131.141~20.04
