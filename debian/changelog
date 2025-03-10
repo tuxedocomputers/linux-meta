@@ -1,3 +1,15 @@
+linux-meta (6.14.0-8.8) plucky; urgency=medium
+
+  * Main version: 6.14.0-8.8
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] debian/dkms-versions -- resync from main package
+
+  * Miscellaneous Ubuntu changes
+    - [Packaging] Add lowlatency-kernel meta packages
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Mon, 10 Mar 2025 18:59:34 +0100
+
 linux-meta (6.14.0-7.7) plucky; urgency=medium
 
   * Main version: 6.14.0-7.7
