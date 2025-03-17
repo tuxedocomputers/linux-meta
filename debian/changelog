@@ -1,3 +1,12 @@
+linux-meta (6.14.0-11.11) plucky; urgency=medium
+
+  * Main version: 6.14.0-11.11
+
+  * Miscellaneous Ubuntu changes
+    - [Packaging] add transitionals for oem-24.04 ipu7
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Mon, 17 Mar 2025 11:31:54 +0100
+
 linux-meta (6.14.0-10.10) plucky; urgency=medium
 
   * Main version: 6.14.0-10.10
