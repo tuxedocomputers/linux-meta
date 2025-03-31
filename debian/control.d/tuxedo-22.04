@@ -1,45 +1,44 @@
 Package: linux-headers-tuxedo${variant:suffix}
-Architecture: amd64 armhf arm64 ppc64el s390x
-Section: kernel
-Depends: ${misc:Depends}, linux-headers-${kernel-abi-version}-tuxedo
+Architecture: amd64
+Section: oldlibs
+Depends: ${misc:Depends}, linux-headers-generic-hwe-22.04
 Description: TUXEDO Linux kernel headers
+ Transitional package, was:
  This package will always depend on the latest TUXEDO kernel headers
  available.
 
 Package: linux-image-tuxedo${variant:suffix}
-Architecture: amd64 armhf arm64 ppc64el s390x
-Section: kernel
-Provides: ${dkms:v4l2loopback-modules} ${dkms:zfs-modules} ${dkms:ivsc-modules} ${dkms:virtualbox-guest-modules} ${dkms:wireguard-linux-compat-modules}
-Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-tuxedo | linux-image-unsigned-${kernel-abi-version}-tuxedo, linux-modules-extra-${kernel-abi-version}-tuxedo [amd64 arm64 ppc64el s390x], linux-firmware [amd64 armhf arm64 ppc64el], intel-microcode [amd64], amd64-microcode [amd64]
-Recommends: thermald [amd64]
+Architecture: amd64
+Section: oldlibs
+Depends: ${misc:Depends}, linux-image-generic-hwe-22.04
 Description: TUXEDO Linux kernel image
+ Transitional package, was:
  This package will always depend on the latest TUXEDO kernel image
  available.
 
 Package: linux-tools-tuxedo${variant:suffix}
-Architecture: amd64 armhf arm64 ppc64el s390x
-Section: kernel
-Provides: linux-tools
-Depends: ${misc:Depends}, linux-tools-${kernel-abi-version}-tuxedo
+Architecture: amd64
+Section: oldlibs
+Depends: ${misc:Depends}, linux-tools-generic-hwe-22.04
 Description: TUXEDO Linux kernel tools
+ Transitional package, was:
  This package will always depend on the latest TUXEDO kernel tools
  available.
 
 Package: linux-cloud-tools-tuxedo${variant:suffix}
 Architecture: amd64
-Section: kernel
-Provides: linux-cloud-tools
-Depends: ${misc:Depends}, linux-cloud-tools-${kernel-abi-version}-tuxedo
+Section: oldlibs
+Depends: ${misc:Depends}, linux-cloud-tools-generic-hwe-22.04
 Description: TUXEDO Linux kernel cloud tools
+ Transitional package, was:
  This package will always depend on the latest TUXEDO kernel cloud tools
  available.
 
 Package: linux-tuxedo${variant:suffix}
-Architecture: amd64 armhf arm64 ppc64el s390x
-Section: kernel
-Provides: ${test:provides-full-tuxedo} ${test:provides-full-preferred}
-Depends: ${misc:Depends}, linux-image-tuxedo${variant:suffix} (= ${binary:Version}), linux-headers-tuxedo${variant:suffix} (= ${binary:Version})
-Recommends: linux-tools-${kernel-abi-version}-tuxedo, ubuntu-kernel-accessories
+Architecture: amd64
+Section: oldlibs
+Depends: ${misc:Depends}, linux-generic-hwe-22.04
 Description: Complete TUXEDO Linux kernel and headers
+ Transitional package, was:
  This package will always depend on the latest complete TUXEDO Linux kernel
  and headers.

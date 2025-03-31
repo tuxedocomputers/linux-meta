@@ -27,34 +27,8 @@ variables:
     GIT_STRATEGY: clone
 
 stages:
-    # The update job is not run on the same commit as the build, and deploy jobs. It's included in
-    # this explicit order here purely to make the CI script more readable.
-    - update
     - build
     - deploy
-
-update:
-    stage: update
-
-    tags:
-        - size:medium
-
-    only:
-        # Don't run on every push, but only manually issued and periodically.
-        - web
-        - schedule
-        - trigger
-
-    script:
-        # GitLab CI checks out in a detached head state, correct this to be able to push.
-        - git checkout ${CI_COMMIT_BRANCH}
-
-        # Run the logic determining the new version, update, and push the result.
-        - ./auto-update ${NEW_KERNEL_TAG}
-
-        # Push using a GitLab Personal Access Token.
-        - git push "https://${TUXEDO_BOT_GITLAB_USERNAME}:${TUXEDO_BOT_GITLAB_CI_PERSONAL_ACCESS_TOKEN}@${CI_REPOSITORY_URL#*@}" ${CI_COMMIT_BRANCH}
-        - git push "https://${TUXEDO_BOT_GITLAB_USERNAME}:${TUXEDO_BOT_GITLAB_CI_PERSONAL_ACCESS_TOKEN}@${CI_REPOSITORY_URL#*@}" $(git describe --tags --abbrev=0)
 
 build:
     stage: build
