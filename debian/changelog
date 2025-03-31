@@ -1,4 +1,10 @@
-linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux2) jammy; urgency=medium
+
+  * Change to transitional package
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 31 Mar 2025 16:16:23 +0200
+
+linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-111058.60~22.04.1tux1
 
@@ -7,13 +13,13 @@ linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux1) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 28 Mar 2025 18:19:18 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-111057.59~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-111057.59~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-111057.59~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 28 Mar 2025 15:36:30 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-111056.58~22.04.1tux2) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-111056.58~22.04.1tux2) jammy; urgency=medium
 
   * Master version: 6.8.0-111056.58~22.04.1tux2
 
@@ -22,31 +28,31 @@ linux-meta-tuxedo-22.04 (6.8.0-111056.58~22.04.1tux2) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 27 Feb 2025 12:04:52 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-111056.58~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-111056.58~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-111056.58~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 19 Feb 2025 18:45:42 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-111055.57~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-111055.57~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-111055.57~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 17 Feb 2025 21:45:34 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-111054.56~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-111054.56~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-111054.56~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 12 Feb 2025 19:53:57 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-110053.55~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-110053.55~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-110053.55~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 23 Jan 2025 19:08:10 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-110053.54~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-110053.54~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-110053.54~22.04.1tux1
 
@@ -55,19 +61,19 @@ linux-meta-tuxedo-22.04 (6.8.0-110053.54~22.04.1tux1) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 23 Jan 2025 11:57:24 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-110052.53~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-110052.53~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-110052.53~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 16 Jan 2025 00:46:13 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-110051.52~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-110051.52~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-110051.52~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 17 Dec 2024 12:56:22 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-109050.51~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-109050.51~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-109050.51~22.04.1tux1
 
@@ -76,7 +82,7 @@ linux-meta-tuxedo-22.04 (6.8.0-109050.51~22.04.1tux1) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 21 Nov 2024 18:58:27 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-109049.49~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-109049.49~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-109049.49~22.04.1tux1
 
@@ -85,43 +91,43 @@ linux-meta-tuxedo-22.04 (6.8.0-109049.49~22.04.1tux1) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 07 Nov 2024 01:57:02 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-109048.48~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-109048.48~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-109048.48~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Sat, 26 Oct 2024 12:25:40 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-109047.47~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-109047.47~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-109047.47~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 25 Oct 2024 20:24:21 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-108047.47~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-108047.47~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-108047.47~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 18 Oct 2024 18:11:59 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-104047.47~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-104047.47~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-104047.47~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 18 Oct 2024 14:31:57 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-103048.48~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-103048.48~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-103048.48~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 07 Oct 2024 18:33:51 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-103047.47~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-103047.47~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-103047.47~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 03 Oct 2024 00:44:09 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-103045.45~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-103045.45~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-103045.45~22.04.1tux1
 
@@ -130,45 +136,45 @@ linux-meta-tuxedo-22.04 (6.8.0-103045.45~22.04.1tux1) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 12 Sep 2024 01:59:09 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-103044.44~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-103044.44~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-103044.44~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 10 Sep 2024 17:15:39 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-102044.44~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-102044.44~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-102044.44~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 06 Sep 2024 09:51:28 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-101044.44~22.04.1tux1+2) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-101044.44~22.04.1tux1+2) jammy; urgency=medium
 
   * Miscellaneous upstream changes
     - Remove unused ubuntu core meta package
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 28 Aug 2024 08:48:16 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-101044.44~22.04.1tux1+1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-101044.44~22.04.1tux1+1) jammy; urgency=medium
 
   * Miscellaneous upstream changes
     - Make edge a transitional package again
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 23 Aug 2024 15:30:24 +0200
 
-linux-meta-tuxedo-22.04 (6.8.0-101044.44~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-101044.44~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-101044.44~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 22 Aug 2024 17:46:33 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-101041.41~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-101041.41~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-101041.41~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 22 Aug 2024 10:37:42 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-100041.41~22.04.1tux1+2) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-100041.41~22.04.1tux1+2) jammy; urgency=medium
 
   * Miscellaneous upstream changes
     - Generate tuxedo transitionals
@@ -176,20 +182,20 @@ linux-meta-tuxedo-22.04 (6.8.0-100041.41~22.04.1tux1+2) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 21 Aug 2024 15:05:12 +0200
 
-linux-meta-tuxedo-22.04 (6.8.0-100041.41~22.04.1tux1+1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-100041.41~22.04.1tux1+1) jammy; urgency=medium
 
   * Miscellaneous upstream changes
     - Make -edge from a transitional to an actual package again
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 21 Aug 2024 14:45:23 +0200
 
-linux-meta-tuxedo-22.04 (6.8.0-100041.41~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-100041.41~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-100041.41~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 09 Aug 2024 20:01:04 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-100040.40~22.04.3tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-100040.40~22.04.3tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-100040.40~22.04.3tux1
 
@@ -198,45 +204,45 @@ linux-meta-tuxedo-22.04 (6.8.0-100040.40~22.04.3tux1) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 30 Jul 2024 23:09:04 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-100040.40~22.04.2tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-100040.40~22.04.2tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-100040.40~22.04.2tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 18 Jul 2024 17:04:49 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-100040.40~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-100040.40~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-100040.40~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 16 Jul 2024 22:00:40 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-100039.39~22.04.1tux2+1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-100039.39~22.04.1tux2+1) jammy; urgency=medium
 
   * Miscellaneous upstream changes
     - Readd alternative dependency removed by accident during update
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 16 Jul 2024 18:34:30 +0200
 
-linux-meta-tuxedo-22.04 (6.8.0-100039.39~22.04.1tux2) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-100039.39~22.04.1tux2) jammy; urgency=medium
 
   * Master version: 6.8.0-100039.39~22.04.1tux2
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 16 Jul 2024 04:38:10 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-100039.39~22.04.1tux1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-100039.39~22.04.1tux1) jammy; urgency=medium
 
   * Master version: 6.8.0-100039.39~22.04.1tux1
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 16 Jul 2024 01:33:49 +0000
 
-linux-meta-tuxedo-22.04 (6.8.0-100038.38~22.04.1tux2+1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-100038.38~22.04.1tux2+1) jammy; urgency=medium
 
   * Miscellaneous upstream changes
     - Add deploy to internal flat apt testing repo
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 15 Jul 2024 17:14:55 +0200
 
-linux-meta-tuxedo-22.04 (6.8.0-100038.38~22.04.1tux2) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.8.0-100038.38~22.04.1tux2) jammy; urgency=medium
 
   * Master version: 6.8.0-100038.38~22.04.1tux2
 
@@ -245,7 +251,7 @@ linux-meta-tuxedo-22.04 (6.8.0-100038.38~22.04.1tux2) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 12 Jul 2024 18:31:45 +0200
 
-linux-meta-tuxedo-22.04 (6.5.0.100044.44~22.04.116) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.100044.44~22.04.116) jammy; urgency=medium
 
   * Bump ABI 6.5.0-100044.44~22.04
 
@@ -257,43 +263,43 @@ linux-meta-tuxedo-22.04 (6.5.0.100044.44~22.04.116) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 02 Jul 2024 16:24:12 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10045.115) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10045.115) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10045
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 24 Jun 2024 16:14:52 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10044.114) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10044.114) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10044
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 13 Jun 2024 23:00:37 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10043.113) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10043.113) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10043
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 04 Jun 2024 16:17:04 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10042.112) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10042.112) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10042
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Sat, 25 May 2024 13:44:03 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10041.111) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10041.111) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10041
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 24 May 2024 19:55:44 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10040.110) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10040.110) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10040
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 08 May 2024 19:16:41 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10039.109) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10039.109) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10039
 
@@ -302,55 +308,55 @@ linux-meta-tuxedo-22.04 (6.5.0.10039.109) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 07 May 2024 15:51:56 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10038.108) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10038.108) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10038
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Sat, 27 Apr 2024 09:54:09 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10037.107) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10037.107) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10037
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 26 Apr 2024 21:14:24 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10036.106) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10036.106) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10036
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 26 Apr 2024 17:18:27 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10035.105) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10035.105) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10035
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 26 Apr 2024 18:04:04 +0200
 
-linux-meta-tuxedo-22.04 (6.5.0.10034.104) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10034.104) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10034
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 26 Apr 2024 18:03:33 +0200
 
-linux-meta-tuxedo-22.04 (6.5.0.10033.103) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10033.103) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10033
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 19 Apr 2024 10:06:38 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10032.102) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10032.102) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10032
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 05 Apr 2024 00:20:13 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10031.101) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10031.101) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10031
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 28 Mar 2024 13:24:44 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10030.100) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10030.100) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10030
 
@@ -359,14 +365,14 @@ linux-meta-tuxedo-22.04 (6.5.0.10030.100) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 25 Mar 2024 11:57:17 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10029.99) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10029.99) jammy; urgency=medium
 
   * Miscellaneous upstream changes
     - Manual temporary fix for package sync mishap
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 25 Mar 2024 10:17:03 +0100
 
-linux-meta-tuxedo-22.04 (6.5.0.10029.98) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10029.98) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10029
 
@@ -375,7 +381,7 @@ linux-meta-tuxedo-22.04 (6.5.0.10029.98) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 22 Mar 2024 18:10:49 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10028.97) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10028.97) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10028
 
@@ -384,7 +390,7 @@ linux-meta-tuxedo-22.04 (6.5.0.10028.97) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 13 Mar 2024 10:42:26 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10027.96) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10027.96) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10027
 
@@ -393,7 +399,7 @@ linux-meta-tuxedo-22.04 (6.5.0.10027.96) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 05 Mar 2024 12:19:43 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10026.95) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10026.95) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10026
 
@@ -402,7 +408,7 @@ linux-meta-tuxedo-22.04 (6.5.0.10026.95) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 05 Mar 2024 09:25:28 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10025.94) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10025.94) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10025
 
@@ -411,25 +417,25 @@ linux-meta-tuxedo-22.04 (6.5.0.10025.94) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 21 Feb 2024 00:24:06 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10024.93) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10024.93) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10024
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 20 Feb 2024 14:32:18 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10023.92) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10023.92) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10023
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 08 Feb 2024 00:21:49 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10022.91) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10022.91) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10022
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 18 Jan 2024 03:59:12 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10021.90) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10021.90) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10021
 
@@ -438,25 +444,25 @@ linux-meta-tuxedo-22.04 (6.5.0.10021.90) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 18 Jan 2024 00:24:50 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10020.89) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10020.89) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10020
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 16 Jan 2024 19:15:25 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10019.88) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10019.88) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10019
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 10 Jan 2024 22:50:51 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10018.87) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10018.87) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10018
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 08 Jan 2024 19:05:34 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10017.86) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10017.86) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10017
 
@@ -466,37 +472,37 @@ linux-meta-tuxedo-22.04 (6.5.0.10017.86) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 05 Jan 2024 21:21:59 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10016.85) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10016.85) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10016
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 04 Jan 2024 22:01:29 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10015.84) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10015.84) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10015
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 28 Dec 2023 18:15:28 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10014.83) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10014.83) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10014
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 20 Dec 2023 17:35:20 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10013.82) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10013.82) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10013
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 18 Dec 2023 13:03:31 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10012.81) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10012.81) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10012
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 13 Dec 2023 16:07:34 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10011.80) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10011.80) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10011
 
@@ -505,7 +511,7 @@ linux-meta-tuxedo-22.04 (6.5.0.10011.80) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 08 Dec 2023 11:51:46 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10010.79) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10010.79) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10010
 
@@ -514,19 +520,19 @@ linux-meta-tuxedo-22.04 (6.5.0.10010.79) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 22 Nov 2023 15:39:49 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10009.78) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10009.78) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10009
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 14 Nov 2023 22:43:40 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10008.77) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10008.77) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10008
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 06 Nov 2023 15:57:52 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10007.76) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10007.76) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10007
 
@@ -539,13 +545,13 @@ linux-meta-tuxedo-22.04 (6.5.0.10007.76) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 30 Oct 2023 22:51:33 +0000
 
-linux-meta-tuxedo-22.04 (6.5.0.10006.75) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10006.75) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10006
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 20 Oct 2023 19:13:42 +0200
 
-linux-meta-tuxedo-22.04 (6.5.0.10005.74) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.5.0.10005.74) jammy; urgency=medium
 
   * Bump ABI 6.5.0-10005
 
@@ -557,43 +563,43 @@ linux-meta-tuxedo-22.04 (6.5.0.10005.74) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 20 Oct 2023 19:08:41 +0200
 
-linux-meta-tuxedo-22.04 (6.2.0.10028.73) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10028.73) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10028
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 04 Oct 2023 16:40:19 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10027.72) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10027.72) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10027
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 27 Sep 2023 17:30:35 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10026.71) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10026.71) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10026
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 26 Sep 2023 23:40:42 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10025.70) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10025.70) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10025
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 20 Sep 2023 11:13:11 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10023.69) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10023.69) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10023
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 04 Sep 2023 23:23:51 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10022.68) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10022.68) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10022
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 23 Aug 2023 21:56:10 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10021.67) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10021.67) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10021
 
@@ -602,61 +608,61 @@ linux-meta-tuxedo-22.04 (6.2.0.10021.67) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 23 Aug 2023 19:03:40 +0200
 
-linux-meta-tuxedo-22.04 (6.2.0.10020.66) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10020.66) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10020
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 22 Aug 2023 16:31:26 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10019.65) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10019.65) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10019
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 22 Aug 2023 11:56:53 +0200
 
-linux-meta-tuxedo-22.04 (6.2.0.10018.64) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10018.64) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10018
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 18 Jul 2023 23:31:55 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10017.63) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10017.63) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10017
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 17 Jul 2023 17:34:51 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10016.62) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10016.62) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10016
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 13 Jul 2023 23:36:54 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10015.61) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10015.61) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10015
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 12 Jul 2023 13:56:35 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10014.60) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10014.60) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10014
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 12 Jul 2023 10:26:37 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10013.59) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10013.59) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10013
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 03 Jul 2023 16:46:38 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10012.58) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10012.58) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10012
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 29 Jun 2023 14:51:31 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10011.57) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10011.57) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10011
 
@@ -666,13 +672,13 @@ linux-meta-tuxedo-22.04 (6.2.0.10011.57) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 19 Jun 2023 12:01:32 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10010.56) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10010.56) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10010
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 13 Jun 2023 06:38:21 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10009.55) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10009.55) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10009
 
@@ -681,13 +687,13 @@ linux-meta-tuxedo-22.04 (6.2.0.10009.55) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 06 Jun 2023 19:51:03 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10008.54) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10008.54) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10008
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 14 Apr 2023 23:00:51 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10007.53) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10007.53) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10007
 
@@ -696,31 +702,31 @@ linux-meta-tuxedo-22.04 (6.2.0.10007.53) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 06 Apr 2023 23:07:39 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10006.52) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10006.52) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10006
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 28 Mar 2023 19:03:42 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10005.51) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10005.51) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10005
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 22 Mar 2023 14:23:23 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10004.50) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10004.50) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10004
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 21 Mar 2023 20:08:31 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10003.49) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10003.49) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10003
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 17 Mar 2023 13:38:31 +0000
 
-linux-meta-tuxedo-22.04 (6.2.0.10002.48) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.2.0.10002.48) jammy; urgency=medium
 
   * Bump ABI 6.2.0-10002
 
@@ -729,31 +735,31 @@ linux-meta-tuxedo-22.04 (6.2.0.10002.48) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 16 Mar 2023 14:25:42 +0000
 
-linux-meta-tuxedo-22.04 (6.1.0.1011.47) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.1.0.1011.47) jammy; urgency=medium
 
   * Bump ABI 6.1.0-1011
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 27 Feb 2023 21:38:43 +0000
 
-linux-meta-tuxedo-22.04 (6.1.0.1010.46) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.1.0.1010.46) jammy; urgency=medium
 
   * Bump ABI 6.1.0-1010
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 27 Feb 2023 14:06:47 +0000
 
-linux-meta-tuxedo-22.04 (6.1.0.1009.45) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.1.0.1009.45) jammy; urgency=medium
 
   * Bump ABI 6.1.0-1009
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 22 Feb 2023 12:21:24 +0000
 
-linux-meta-tuxedo-22.04 (6.1.0.1008.44) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.1.0.1008.44) jammy; urgency=medium
 
   * Bump ABI 6.1.0-1008
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 20 Feb 2023 16:34:23 +0000
 
-linux-meta-tuxedo-22.04 (6.1.0.1007.43) focal; urgency=medium
+linux-meta-tuxedo-22.04 (6.1.0.1007.43) jammy; urgency=medium
 
   * Bump ABI 6.1.0-1007
 
@@ -762,13 +768,13 @@ linux-meta-tuxedo-22.04 (6.1.0.1007.43) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 20 Feb 2023 13:19:17 +0100
 
-linux-meta-tuxedo-22.04 (5.15.0.10066.42) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10066.42) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10066
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Sat, 04 Feb 2023 15:37:01 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10065.41) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10065.41) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10065
 
@@ -777,25 +783,25 @@ linux-meta-tuxedo-22.04 (5.15.0.10065.41) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 02 Feb 2023 02:01:35 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10060.40) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10060.40) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10060
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Sat, 21 Jan 2023 02:14:29 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10059.39) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10059.39) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10059
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 10 Jan 2023 15:27:45 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10058.38) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10058.38) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10058
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 09 Jan 2023 18:45:14 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10057.37) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10057.37) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10057
 
@@ -807,7 +813,7 @@ linux-meta-tuxedo-22.04 (5.15.0.10057.37) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 09 Dec 2022 15:16:17 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10056.36) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10056.36) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10056
 
@@ -816,7 +822,7 @@ linux-meta-tuxedo-22.04 (5.15.0.10056.36) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 05 Dec 2022 13:06:31 +0100
 
-linux-meta-tuxedo-22.04 (5.15.0.10054.35) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10054.35) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10054
 
@@ -825,7 +831,7 @@ linux-meta-tuxedo-22.04 (5.15.0.10054.35) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 15 Nov 2022 17:36:06 +0100
 
-linux-meta-tuxedo-22.04 (5.15.0.10053.34) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10053.34) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10053
 
@@ -834,56 +840,56 @@ linux-meta-tuxedo-22.04 (5.15.0.10053.34) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 15 Nov 2022 17:06:34 +0100
 
-linux-meta-tuxedo-22.04 (5.15.0.10052.33) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10052.33) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10052
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 25 Oct 2022 12:57:55 +0200
 
-linux-meta-tuxedo-22.04 (5.15.0.10051.32) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10051.32) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10051
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 25 Oct 2022 12:57:11 +0200
 
-linux-meta-tuxedo-22.04 (5.15.0.10050.31) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10050.31) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10050
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 26 Sep 2022 15:27:54 +0200
 
-linux-meta-tuxedo-22.04 (5.15.0.10049.30) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10049.30) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10049
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 26 Sep 2022 15:26:49 +0200
 
-linux-meta-tuxedo-22.04 (5.15.0.10048.29) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10048.29) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10048
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 29 Aug 2022 12:38:39 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10047.28) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10047.28) jammy; urgency=medium
 
   * Miscellaneous upstream changes
     - Fix build script checkout error on too similar tags
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 18 Aug 2022 09:55:54 +0200
 
-linux-meta-tuxedo-22.04 (5.15.0.10047.27) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10047.27) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10047
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 17 Aug 2022 17:00:47 +0200
 
-linux-meta-tuxedo-22.04 (5.15.0.10046.26) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10046.26) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10046
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 17 Aug 2022 16:58:38 +0200
 
-linux-meta-tuxedo-22.04 (5.15.0.10045.25) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10045.25) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10045
 
@@ -895,7 +901,7 @@ linux-meta-tuxedo-22.04 (5.15.0.10045.25) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 17 Aug 2022 16:54:56 +0200
 
-linux-meta-tuxedo-22.04 (5.15.0.10043.20) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10043.20) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10043
 
@@ -904,13 +910,13 @@ linux-meta-tuxedo-22.04 (5.15.0.10043.20) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 13 Jul 2022 02:44:13 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10041.19) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10041.19) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10041
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 23 Jun 2022 02:42:03 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10040.18) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10040.18) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10040
 
@@ -919,7 +925,7 @@ linux-meta-tuxedo-22.04 (5.15.0.10040.18) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 16 Jun 2022 03:08:55 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10037.17) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10037.17) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10037
 
@@ -928,7 +934,7 @@ linux-meta-tuxedo-22.04 (5.15.0.10037.17) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 15 Jun 2022 17:13:32 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10036.16) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10036.16) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10036
 
@@ -937,48 +943,49 @@ linux-meta-tuxedo-22.04 (5.15.0.10036.16) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 01 Jun 2022 02:48:23 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10035.15) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10035.15) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10035
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 27 May 2022 02:32:21 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10034.14) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10034.14) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10034
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Sun, 22 May 2022 02:49:25 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10033.13) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10033.13) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10033
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 19 May 2022 03:01:21 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10032.12) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10032.12) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10032
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 11 May 2022 02:32:27 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10030.11) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10030.11) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10030
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 06 May 2022 12:54:54 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10029.10) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10029.10) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10029
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 04 May 2022 02:17:31 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10028.9) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10028.9) jammy; urgency=medium
 
+  * Dummy entry to make lintean happy
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 03 May 2022 19:54:12 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10028.8) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10028.8) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10028
 
@@ -987,45 +994,45 @@ linux-meta-tuxedo-22.04 (5.15.0.10028.8) focal; urgency=medium
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 28 Apr 2022 12:12:31 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10027.7) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10027.7) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10027
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 15 Apr 2022 02:39:44 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10026.6) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10026.6) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10026
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 14 Apr 2022 02:50:26 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10025.5) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10025.5) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10025
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 31 Mar 2022 03:24:04 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10024.4) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10024.4) jammy; urgency=medium
 
   * Miscellaneous upstream changes
     - Correct dependency listing
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 29 Mar 2022 14:26:51 +0200
 
-linux-meta-tuxedo-22.04 (5.15.0.10024.3) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10024.3) jammy; urgency=medium
 
   * Bump ABI 5.15.0-10024
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 28 Mar 2022 15:36:57 +0000
 
-linux-meta-tuxedo-22.04 (5.15.0.10023.2) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10023.2) jammy; urgency=medium
 
   * Miscellaneous upstream changes
     - Fix auto-update checking out no tag because of a parsing issue
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 28 Mar 2022 17:02:54 +0200
 
-linux-meta-tuxedo-22.04 (5.15.0.10023.1) focal; urgency=medium
+linux-meta-tuxedo-22.04 (5.15.0.10023.1) jammy; urgency=medium
 
   * Start linux-tuxedo-22.04
 
