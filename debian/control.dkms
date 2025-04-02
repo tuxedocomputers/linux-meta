@@ -1,7 +1,7 @@
 
 Package: linux-modules-MODULE-FLAVOUR${variant:suffix}
 Architecture: ARCH
-Section: oldlibs
+Section: kernel
 Depends:
  ${misc:Depends},
  linux-modules-MODULE-generic-hwe-22.04,

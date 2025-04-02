@@ -1,6 +1,6 @@
 Package: linux-headers-tuxedo${variant:suffix}
 Architecture: amd64
-Section: oldlibs
+Section: kernel
 Depends: ${misc:Depends}, linux-headers-generic-hwe-22.04
 Description: TUXEDO Linux kernel headers
  Transitional package, was:
@@ -9,7 +9,7 @@ Description: TUXEDO Linux kernel headers
 
 Package: linux-image-tuxedo${variant:suffix}
 Architecture: amd64
-Section: oldlibs
+Section: kernel
 Depends: ${misc:Depends}, linux-image-generic-hwe-22.04
 Description: TUXEDO Linux kernel image
  Transitional package, was:
@@ -18,7 +18,7 @@ Description: TUXEDO Linux kernel image
 
 Package: linux-tools-tuxedo${variant:suffix}
 Architecture: amd64
-Section: oldlibs
+Section: kernel
 Depends: ${misc:Depends}, linux-tools-generic-hwe-22.04
 Description: TUXEDO Linux kernel tools
  Transitional package, was:
@@ -27,7 +27,7 @@ Description: TUXEDO Linux kernel tools
 
 Package: linux-cloud-tools-tuxedo${variant:suffix}
 Architecture: amd64
-Section: oldlibs
+Section: kernel
 Depends: ${misc:Depends}, linux-cloud-tools-generic-hwe-22.04
 Description: TUXEDO Linux kernel cloud tools
  Transitional package, was:
