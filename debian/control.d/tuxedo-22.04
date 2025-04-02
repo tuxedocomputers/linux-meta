@@ -9,7 +9,7 @@ Description: TUXEDO Linux kernel headers
 
 Package: linux-image-tuxedo${variant:suffix}
 Architecture: amd64
-Section: oldlibs
+Section: kernel
 Depends: ${misc:Depends}, linux-image-generic-hwe-22.04
 Description: TUXEDO Linux kernel image
  Transitional package, was:
