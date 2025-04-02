@@ -1,6 +1,11 @@
+linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux5) jammy; urgency=medium
+
+  * oldlibs has unwanted side effects
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 02 Apr 2025 17:29:11 +0200
+
 linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux4) jammy; urgency=medium
 
-  [ Werner Sembach ]
   * Fix "Prevent botched upgrades"
 
  -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 02 Apr 2025 16:47:51 +0200
