@@ -1,3 +1,9 @@
+linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux3) jammy; urgency=medium
+
+  * Prevent botched upgrades
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 02 Apr 2025 16:37:40 +0200
+
 linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux2) jammy; urgency=medium
 
   * Change to transitional package
