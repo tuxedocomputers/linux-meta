@@ -1,3 +1,12 @@
+linux-meta (6.14.0-17.17) plucky; urgency=medium
+
+  * Main version: 6.14.0-17.17
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] debian/dkms-versions -- resync from main package
+
+ -- Mehmet Basaran <mehmet.basaran@canonical.com>  Thu, 01 May 2025 10:40:31 +0300
+
 linux-meta (6.14.0-15.15) plucky; urgency=medium
 
   * Main version: 6.14.0-15.15
