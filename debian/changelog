@@ -1,3 +1,9 @@
+linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux6) jammy; urgency=medium
+
+  * Replace tuxedo-kernel to make hwe kernel the default to boot
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Tue, 06 May 2025 14:32:23 +0200
+
 linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux5) jammy; urgency=medium
 
   * oldlibs has unwanted side effects
