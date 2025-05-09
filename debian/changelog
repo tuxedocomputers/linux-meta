@@ -1,3 +1,10 @@
+linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux7) jammy; urgency=medium
+
+  * Revert "Replace tuxedo-kernel to make hwe kernel the default to boot"
+  * Add config file deprioritising the TUXEDO kernel
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 09 May 2025 15:59:50 +0200
+
 linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux6) jammy; urgency=medium
 
   * Replace tuxedo-kernel to make hwe kernel the default to boot
