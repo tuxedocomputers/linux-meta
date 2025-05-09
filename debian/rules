@@ -152,10 +152,10 @@ binary-indep: t=-i
 binary-%: debian/control install-%
 	dh_testdir
 	dh_testroot
-
 	dh_installdirs $(t)
 	dh_installdocs $(t)
 	dh_installchangelogs $(t)
+	dh_install $(t)
 	dh_compress $(t)
 	dh_fixperms $(t)
 	dh_installdeb $(t)
