@@ -1,3 +1,9 @@
+linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux8) jammy; urgency=medium
+
+  * Replace config file deprioritising the TUXEDO kernel with script working on GRUB 2.06
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 14 May 2025 19:16:44 +0200
+
 linux-meta-tuxedo-22.04 (6.8.0-111058.60~22.04.1tux7) jammy; urgency=medium
 
   * Revert "Replace tuxedo-kernel to make hwe kernel the default to boot"
