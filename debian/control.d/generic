@@ -10,7 +10,7 @@ Package: linux-image-generic${variant:suffix}
 Architecture: amd64 armhf arm64 ppc64el s390x
 Section: kernel
 Provides: ${dkms:v4l2loopback-modules} ${dkms:zfs-modules} ${dkms:ivsc-modules} ${dkms:virtualbox-guest-modules} ${dkms:wireguard-linux-compat-modules}
-Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic, linux-modules-extra-${kernel-abi-version}-generic [amd64 arm64 ppc64el s390x], linux-firmware [amd64 armhf arm64 ppc64el], intel-microcode [amd64], amd64-microcode [amd64]
+Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic, linux-modules-${kernel-abi-version}-generic [amd64 arm64 ppc64el s390x], linux-firmware [amd64 armhf arm64 ppc64el], intel-microcode [amd64], amd64-microcode [amd64]
 Recommends: thermald [amd64]
 Description: Generic Linux kernel image
  This package will always depend on the latest generic kernel image
@@ -19,7 +19,7 @@ Description: Generic Linux kernel image
 Package: linux-image-uc-generic${variant:suffix}
 Architecture: amd64 arm64
 Section: kernel
-Depends: ${misc:Depends}, linux-image-uc-${kernel-abi-version}-generic, linux-modules-extra-${kernel-abi-version}-generic, linux-firmware, firmware-sof-signed [amd64], wireless-regdb
+Depends: ${misc:Depends}, linux-image-uc-${kernel-abi-version}-generic, linux-modules-${kernel-abi-version}-generic, linux-firmware, firmware-sof-signed [amd64], wireless-regdb
 Description: Generic Linux kernel image for Ubuntu Core
  This package will always depend on the latest generic kernel image
  available.
