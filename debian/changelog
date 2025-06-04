@@ -1,3 +1,16 @@
+linux-meta (6.15.0-3.3) questing; urgency=medium
+
+  * Main version: 6.15.0-3.3
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] debian/dkms-versions -- resync from main package
+
+  * Miscellaneous Ubuntu changes
+    - [Packaging] Replace linux-modules-extra with linux-modules for generic image
+      depends.
+
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Wed, 04 Jun 2025 09:14:40 +0300
+
 linux-meta (6.15.0-0.0) questing; urgency=medium
 
   * Dummy entry.
