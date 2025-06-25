@@ -118,7 +118,7 @@ Package: linux-modules-iwlwifi-oem-24.04
 Architecture: amd64
 Section: oldlibs
 Multi-Arch: no
-Depends: linux-modules-iwlwifi-generic-hwe-24.04
+#Depends: linux-modules-iwlwifi-generic-hwe-24.04
 Description: Extra drivers for iwlwifi for the oem flavour (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
@@ -126,7 +126,7 @@ Package: linux-modules-iwlwifi-oem-24.04a
 Architecture: amd64
 Section: oldlibs
 Multi-Arch: no
-Depends: linux-modules-iwlwifi-generic-hwe-24.04
+#Depends: linux-modules-iwlwifi-generic-hwe-24.04
 Description: Extra drivers for iwlwifi for the oem flavour (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
