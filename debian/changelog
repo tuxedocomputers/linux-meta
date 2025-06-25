@@ -1,3 +1,12 @@
+linux-meta (6.15.0-3.3+1) questing; urgency=medium
+
+
+  * Miscellaneous Ubuntu changes
+    - [Packaging] Disable oem iwlwifi transitional deps for now, until backport-
+      iwlwifi-dkms builds.
+
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Wed, 25 Jun 2025 19:06:04 +0300
+
 linux-meta (6.15.0-3.3) questing; urgency=medium
 
   * Main version: 6.15.0-3.3
