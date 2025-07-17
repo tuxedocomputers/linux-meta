@@ -1,3 +1,9 @@
+linux-meta (6.16.0-0.0) questing; urgency=medium
+
+  * Empty entry
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Thu, 17 Jul 2025 15:13:18 +0200
+
 linux-meta (6.15.0-4.4) questing; urgency=medium
 
   * Main version: 6.15.0-4.4
