@@ -1,3 +1,9 @@
+linux-meta (6.16.0-9.9) questing; urgency=medium
+
+  * Main version: 6.16.0-9.9
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Mon, 21 Jul 2025 09:51:22 +0200
+
 linux-meta (6.16.0-8.8) questing; urgency=medium
 
   * Main version: 6.16.0-8.8
