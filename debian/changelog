@@ -1,3 +1,9 @@
+linux-meta-tuxedo-24.04 (6.11.0-121029.29~24.04.1tux1) noble; urgency=medium
+
+  * Master version: 6.11.0-121029.29~24.04.1tux1
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 25 Jul 2025 08:18:40 +0000
+
 linux-meta-tuxedo-24.04 (6.11.0-120029.29~24.04.1tux2) noble; urgency=medium
 
   * Master version: 6.11.0-120029.29~24.04.1tux2
