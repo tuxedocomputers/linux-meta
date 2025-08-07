@@ -1,3 +1,15 @@
+linux-meta (6.16.0-13.13) questing; urgency=medium
+
+  * Main version: 6.16.0-13.13
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] debian/dkms-versions -- resync from main package
+
+  * Miscellaneous Ubuntu changes
+    - [Packaging] v6.16 now provides Intel ipu6-modules
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Thu, 07 Aug 2025 16:33:11 +0200
+
 linux-meta (6.16.0-12.12) questing; urgency=medium
 
   * Main version: 6.16.0-12.12
