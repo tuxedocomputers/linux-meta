@@ -9,6 +9,7 @@ Description: Generic Linux kernel headers
 Package: linux-image-generic${variant:suffix}
 Architecture: amd64 armhf arm64 ppc64el s390x
 Section: kernel
+Conflicts: linux-image-fb-generic${variant:suffix}
 Provides: ${dkms:v4l2loopback-modules} ${dkms:zfs-modules} ${dkms:ivsc-modules} ${dkms:virtualbox-guest-modules} ${dkms:wireguard-linux-compat-modules} ${dkms:ipu6-modules}
 Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic, linux-modules-${kernel-abi-version}-generic [amd64 arm64 ppc64el s390x], linux-firmware [amd64 armhf arm64 ppc64el], intel-microcode [amd64], amd64-microcode [amd64]
 Recommends: thermald [amd64]
@@ -19,6 +20,7 @@ Description: Generic Linux kernel image
 Package: linux-image-fb-generic${variant:suffix}
 Architecture: arm64
 Section: kernel
+Conflicts: linux-image-generic${variant:suffix}
 Depends: ${misc:Depends}, linux-image-fb-${kernel-abi-version}-generic, linux-modules-${kernel-abi-version}-generic, linux-firmware, firmware-sof-signed [amd64], wireless-regdb
 Description: Generic Linux kernel image for Ubuntu Core (fallback)
  This package will always depend on the latest generic kernel image
