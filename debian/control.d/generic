@@ -16,6 +16,16 @@ Description: Generic Linux kernel image
  This package will always depend on the latest generic kernel image
  available.
 
+Package: linux-image-fb-generic${variant:suffix}
+Architecture: arm64
+Section: kernel
+Depends: ${misc:Depends}, linux-image-fb-${kernel-abi-version}-generic, linux-modules-${kernel-abi-version}-generic, linux-firmware, firmware-sof-signed [amd64], wireless-regdb
+Description: Generic Linux kernel image for Ubuntu Core (fallback)
+ This package will always depend on the latest generic kernel image
+ available.
+ .
+ This kernel is built without the stubble wrapper.
+
 Package: linux-image-uc-generic${variant:suffix}
 Architecture: amd64 arm64
 Section: kernel
