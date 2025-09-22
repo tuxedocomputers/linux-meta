@@ -1,3 +1,16 @@
+linux-meta (6.17.0-5.5) questing; urgency=medium
+
+  * Main version: 6.17.0-5.5
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] debian/dkms-versions -- resync from main package
+
+  * [FFe] arm64: Build stubble kernel (LP: #2121352)
+    - [Config] stubble -- add fallback kernel meta package
+    - [Config] stubble -- add fallback kernel meta package - conflicts
+
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Mon, 22 Sep 2025 10:57:47 +0300
+
 linux-meta (6.17.0-4.4) questing; urgency=medium
 
   * Main version: 6.17.0-4.4
