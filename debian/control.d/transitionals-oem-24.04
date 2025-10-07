@@ -42,7 +42,7 @@ Depends: linux-generic-hwe-24.04
 Description: Complete OEM Linux kernel and headers (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
-Package: linux-headers-oem-24.04a
+Package: linux-headers-oem-24.04c
 Architecture: amd64
 Section: oldlibs
 Multi-Arch: no
@@ -50,7 +50,7 @@ Depends: linux-headers-generic-hwe-24.04
 Description: OEM Linux kernel headers (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
-Package: linux-image-oem-24.04a
+Package: linux-image-oem-24.04c
 Architecture: amd64
 Section: oldlibs
 Multi-Arch: no
@@ -58,7 +58,7 @@ Depends: linux-image-generic-hwe-24.04
 Description: OEM Linux kernel image (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
-Package: linux-image-uc-oem-24.04a
+Package: linux-image-uc-oem-24.04c
 Architecture: amd64
 Section: oldlibs
 Multi-Arch: no
@@ -66,7 +66,7 @@ Depends: linux-image-uc-generic-hwe-24.04
 Description: OEM Linux kernel image for Ubuntu Core (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
-Package: linux-tools-oem-24.04a
+Package: linux-tools-oem-24.04c
 Architecture: amd64
 Section: oldlibs
 Multi-Arch: no
@@ -74,7 +74,7 @@ Depends: linux-tools-generic-hwe-24.04
 Description: OEM Linux kernel tools (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
-Package: linux-oem-24.04a
+Package: linux-oem-24.04c
 Architecture: amd64
 Section: oldlibs
 Multi-Arch: no
@@ -90,7 +90,7 @@ Depends: linux-modules-${kernel-abi-version}-generic
 Description: Extra drivers for ipu6 for the oem flavour (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
-Package: linux-modules-ipu6-oem-24.04a
+Package: linux-modules-ipu6-oem-24.04c
 Architecture: amd64
 Section: oldlibs
 Multi-Arch: no
@@ -106,7 +106,7 @@ Depends: linux-modules-ipu7-generic-hwe-24.04
 Description: Extra drivers for ipu7 for the oem flavour (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
-Package: linux-modules-ipu7-oem-24.04a
+Package: linux-modules-ipu7-oem-24.04c
 Architecture: amd64
 Section: oldlibs
 Multi-Arch: no
@@ -122,7 +122,7 @@ Multi-Arch: no
 Description: Extra drivers for iwlwifi for the oem flavour (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
-Package: linux-modules-iwlwifi-oem-24.04a
+Package: linux-modules-iwlwifi-oem-24.04c
 Architecture: amd64
 Section: oldlibs
 Multi-Arch: no
@@ -138,7 +138,7 @@ Depends: linux-modules-usbio-generic-hwe-24.04
 Description: Extra drivers for usbio for the oem flavour (transitional package)
  Transitional package for upgrades. This package can be safely removed.
 
-Package: linux-modules-usbio-oem-24.04a
+Package: linux-modules-usbio-oem-24.04c
 Architecture: amd64
 Section: oldlibs
 Multi-Arch: no
