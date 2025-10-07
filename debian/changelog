@@ -1,3 +1,12 @@
+linux-meta (6.17.0-6.6) questing; urgency=medium
+
+  * Main version: 6.17.0-6.6
+
+  * Miscellaneous Ubuntu changes
+    - [Packaging] Update oem transitionals
+
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Tue, 07 Oct 2025 14:26:47 +0300
+
 linux-meta (6.17.0-5.5) questing; urgency=medium
 
   * Main version: 6.17.0-5.5
