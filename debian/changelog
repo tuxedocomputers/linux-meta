@@ -1,3 +1,9 @@
+linux-meta-unstable (6.18.0-0.0) questing; urgency=medium
+
+  * Empty entry
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Wed, 15 Oct 2025 11:55:46 +0200
+
 linux-meta (6.17.0-6.6) questing; urgency=medium
 
   * Main version: 6.17.0-6.6
