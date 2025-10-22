@@ -1,3 +1,18 @@
+linux-meta-unstable (6.18.0-1.1) resolute; urgency=medium
+
+  * Main version: 6.18.0-1.1
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] update variants
+    - [Packaging] debian/dkms-versions -- resync from main package
+    - [Packaging] update variants
+
+  * Miscellaneous Ubuntu changes
+    - move to 6.18
+    - move to resolute
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Wed, 22 Oct 2025 10:42:36 +0200
+
 linux-meta-unstable (6.18.0-0.0) resolute; urgency=medium
 
   * Empty entry
