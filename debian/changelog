@@ -1,3 +1,9 @@
+linux-meta-unstable (6.18.0-5.5) resolute; urgency=medium
+
+  * Main version: 6.18.0-5.5
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Tue, 18 Nov 2025 11:24:31 +0100
+
 linux-meta-unstable (6.18.0-4.4) resolute; urgency=medium
 
   * Main version: 6.18.0-4.4
