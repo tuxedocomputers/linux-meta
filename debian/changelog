@@ -1,3 +1,16 @@
+linux-meta (6.18.0-7.7) resolute; urgency=medium
+
+  * Main version: 6.18.0-7.7
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] update variants
+    - [Packaging] debian/dkms-versions -- resync from main package
+
+  * Miscellaneous Ubuntu changes
+    - [packaging] rename to linux-meta
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Tue, 16 Dec 2025 13:28:41 +0100
+
 linux-meta (6.18.0-6.6) resolute; urgency=medium
 
   * Main version: 6.18.0-6.6
