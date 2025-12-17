@@ -1,3 +1,9 @@
+linux-meta (6.18.0-8.8) resolute; urgency=medium
+
+  * Main version: 6.18.0-8.8
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Wed, 17 Dec 2025 15:20:30 +0100
+
 linux-meta (6.18.0-7.7) resolute; urgency=medium
 
   * Main version: 6.18.0-7.7
