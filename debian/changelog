@@ -1,3 +1,12 @@
+linux-meta-tuxedo-24.04 (6.17.0-101009.9~24.04.2tux1) noble; urgency=medium
+
+  * Master version: 6.17.0-101009.9~24.04.2tux1
+
+  * Miscellaneous Ubuntu changes
+    - debian/dkms-versions -- update from master
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 08 Jan 2026 17:27:26 +0000
+
 linux-meta-tuxedo-24.04 (6.14.0-119037.37~24.04.1tux1) noble; urgency=medium
 
   * Master version: 6.14.0-119037.37~24.04.1tux1
