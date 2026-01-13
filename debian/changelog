@@ -1,3 +1,9 @@
+linux-meta-unstable (6.19.0-0.0) resolute; urgency=medium
+
+  * Dummy entry.
+
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Tue, 13 Jan 2026 12:51:59 +0200
+
 linux-meta (6.18.0-8.8) resolute; urgency=medium
 
   * Main version: 6.18.0-8.8
