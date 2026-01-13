@@ -1,3 +1,13 @@
+linux-meta-unstable (6.19.0-1.1) resolute; urgency=medium
+
+  * Main version: 6.19.0-1.1
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] update variants
+    - [Packaging] debian/dkms-versions -- resync from main package
+
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Tue, 13 Jan 2026 15:47:18 +0200
+
 linux-meta-unstable (6.19.0-0.0) resolute; urgency=medium
 
   * Dummy entry.
