@@ -1,3 +1,9 @@
+linux-meta (6.19.0-3.3) resolute; urgency=medium
+
+  * Main version: 6.19.0-3.3
+
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Fri, 23 Jan 2026 20:28:47 +0200
+
 linux-meta (6.19.0-2.2) resolute; urgency=medium
 
   * Main version: 6.19.0-2.2
