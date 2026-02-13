@@ -1,3 +1,12 @@
+linux-meta (6.19.0-5.5) resolute; urgency=medium
+
+  * Main version: 6.19.0-5.5
+
+  * Miscellaneous Ubuntu changes
+    - [Packaging] Drop changelog entries older than noble
+
+ -- Timo Aaltonen <timo.aaltonen@canonical.com>  Fri, 13 Feb 2026 19:17:51 +0200
+
 linux-meta (6.19.0-4.4) resolute; urgency=medium
 
   * Main version: 6.19.0-4.4
