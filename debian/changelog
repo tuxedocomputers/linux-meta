@@ -1,3 +1,9 @@
+linux-meta-unstable (7.0.0-0.0) resolute; urgency=medium
+
+  * Empty entry
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Mon, 23 Feb 2026 08:33:56 +0100
+
 linux-meta (6.19.0-6.6) resolute; urgency=medium
 
   * Main version: 6.19.0-6.6
