@@ -1,3 +1,9 @@
+linux-meta-unstable (7.0.0-2.2) resolute; urgency=medium
+
+  * Main version: 7.0.0-2.2
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Fri, 27 Feb 2026 10:28:04 +0100
+
 linux-meta-unstable (7.0.0-1.1) resolute; urgency=medium
 
   * Main version: 7.0.0-1.1
