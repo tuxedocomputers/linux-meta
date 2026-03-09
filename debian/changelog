@@ -1,3 +1,12 @@
+linux-meta (7.0.0-6.6) resolute; urgency=medium
+
+  * Main version: 7.0.0-6.6
+
+  * Packaging resync (LP: #1786013)
+    - [Packaging] update variants
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Mon, 09 Mar 2026 17:21:07 +0100
+
 linux-meta (7.0.0-5.5) resolute; urgency=medium
 
   * Main version: 7.0.0-5.5
