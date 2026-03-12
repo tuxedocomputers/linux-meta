@@ -1,3 +1,15 @@
+linux-meta (7.0.0-7.7) resolute; urgency=medium
+
+  * Main version: 7.0.0-7.7
+
+  * Miscellaneous Ubuntu changes
+    - [Packaging] Drop v4l2loopback and zfs-modules from Provides, they've moved
+      to linux-main-modules.
+    - [Packaging] Wrap dependency fields
+    - [Packaging] Add linux-main-modules-zfs to generic Depends
+
+ -- Paolo Pisati <paolo.pisati@canonical.com>  Thu, 12 Mar 2026 10:55:46 +0100
+
 linux-meta (7.0.0-6.6) resolute; urgency=medium
 
   * Main version: 7.0.0-6.6
