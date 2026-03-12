@@ -8,8 +8,8 @@ Description: Virtual Linux kernel headers
 Package: linux-image-virtual${variant:suffix}
 Architecture: amd64 arm64 armhf ppc64el s390x
 Section: kernel
+Provides: ${dkms:virtualbox-guest-modules} ${dkms:wireguard-linux-compat-modules}
 Depends: ${misc:Depends}, linux-image-${kernel-abi-version}-generic
-Provides: ${dkms:zfs-modules} ${dkms:virtualbox-guest-modules} ${dkms:wireguard-linux-compat-modules}
 Description: Virtual Linux kernel image
  This package will always depend on the latest minimal generic kernel image
  used for virtual instances.
