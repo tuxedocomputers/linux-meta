@@ -1,3 +1,13 @@
+linux-meta-tuxedo-26.04 (7.0.0-100014.14tux1) resolute; urgency=medium
+
+  * Master version: 7.0.0-100014.14tux1
+
+  * Miscellaneous upstream changes
+    - TUXEDO: Edit debian directory
+    - TUXEDO: Add automation scripts
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 08 May 2026 17:01:01 +0200
+
 linux-meta (7.0.0-14.14) resolute; urgency=medium
 
   * Main version: 7.0.0-14.14
