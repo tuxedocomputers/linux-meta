@@ -1,3 +1,12 @@
+linux-meta-tuxedo-24.04 (6.17.0-117023.23~24.04.1tux1) noble; urgency=medium
+
+  * Master version: 6.17.0-117023.23~24.04.1tux1
+
+  * Miscellaneous upstream changes
+    - TUXEDO: Fix mainline version number
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Fri, 08 May 2026 10:42:51 +0000
+
 linux-meta-tuxedo-24.04 (6.17.0-116028.28~24.04.1tux1) noble; urgency=medium
 
   * Master version: 6.17.0-116028.28~24.04.1tux1
