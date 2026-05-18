@@ -77,7 +77,6 @@ update_file()
 
 # Update things from the primary package.
 if [ "$no_update" = 'false' ]; then
-	update_file "$master_dir/$branch/dkms-versions" "debian/dkms-versions"
 	update_file "$master_dir/debian/scripts/misc/git-ubuntu-log" "debian/scripts/misc/git-ubuntu-log"
 fi
 #echo "here_version<$here_version>"
