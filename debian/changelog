@@ -1,3 +1,12 @@
+linux-meta-tuxedo-26.04 (7.0.0-101018.18tux1) resolute; urgency=medium
+
+  * Master version: 7.0.0-101018.18tux1
+
+  * Miscellaneous upstream changes
+    - TUXEDO: Remove dkms-versions
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Mon, 18 May 2026 18:01:23 +0000
+
 linux-meta-tuxedo-26.04 (7.0.0-101017.17tux1) resolute; urgency=medium
 
   * Master version: 7.0.0-101017.17tux1
