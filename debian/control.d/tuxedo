@@ -60,3 +60,11 @@ Recommends: linux-tools-${kernel-abi-version}-tuxedo, ubuntu-kernel-accessories
 Description: Complete Generic Linux kernel and headers
  This package will always depend on the latest complete tuxedo Linux kernel
  and headers.
+
+Package: linux-tuxedo
+Architecture: amd64 armhf arm64 ppc64el s390x
+Section: kernel
+Depends: linux-tuxedo${variant:suffix}
+Description: Complete TUXEDO Linux kernel and headers generic package name
+ This package will always depend on the package that depends on the latest
+ complete TUXEDO Linux kernel and headers.
