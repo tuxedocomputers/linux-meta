@@ -1,3 +1,12 @@
+linux-meta-tuxedo-26.04 (7.0.0-103015.15tux1) resolute; urgency=medium
+
+  * Master version: 7.0.0-103015.15tux1
+
+  * Miscellaneous upstream changes
+    - TUXEDO: Readd generic meta package
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 27 May 2026 23:55:23 +0000
+
 linux-meta-tuxedo-26.04 (7.0.0-102021.21tux1) resolute; urgency=medium
 
   * Master version: 7.0.0-102021.21tux1
