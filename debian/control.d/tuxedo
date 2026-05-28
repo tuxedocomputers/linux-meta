@@ -15,7 +15,6 @@ Provides: ${dkms:ivsc-modules} ${dkms:virtualbox-guest-modules} ${dkms:wireguard
 Depends: ${misc:Depends},
  linux-image-${kernel-abi-version}-tuxedo | linux-image-unsigned-${kernel-abi-version}-tuxedo,
  linux-modules-${kernel-abi-version}-tuxedo [amd64 arm64 ppc64el s390x],
- linux-main-modules-zfs-${kernel-abi-version}-tuxedo [amd64 arm64 ppc64el s390x],
  linux-firmware [amd64 armhf arm64 ppc64el],
  intel-microcode [amd64],
  amd64-microcode [amd64]
