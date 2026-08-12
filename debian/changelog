@@ -1,3 +1,10 @@
+linux-meta-tuxedo-24.04 (7.0.0-108029.29~24.04.1tux2+1) noble; urgency=medium
+
+  * Miscellaneous upstream changes
+    - TUXEDO: Fix debian meta files from upstream
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Wed, 12 Aug 2026 19:02:12 +0000
+
 linux-meta-tuxedo-24.04 (7.0.0-108029.29~24.04.1tux2) noble; urgency=medium
 
   * Master version: 7.0.0-108029.29~24.04.1tux2
