@@ -30,9 +30,9 @@ control_files := debian/control.common
 # control files only wanted for the primary variant
 primary_control_files := $(shell LC_ALL=C ls -d debian/control.d/primary debian/control.d/transitionals-* 2>/dev/null)
 dkms_control_files :=
-#ifneq ($(filter --,$(variants)),)
+ifneq ($(filter --,$(variants)),)
 	control_files += $(primary_control_files)
-#endif
+endif
 control_files += $(filter-out $(primary_control_files) $(wildcard debian/control.d/dkms-*),$(shell LC_ALL=C ls -d debian/control.d/*))
 
 SHELL := sh -e
@@ -71,6 +71,7 @@ $(foreach _line,$(shell gawk '{ OFS = "!"; $$1 = $$1; print }' debian/dkms-versi
 )
 dkms_virtualbox_version=$(KERNEL_ABI_VERSION)
 dkms_wireguard_version := 1.0.0
+dkms_ivsc_version := 0~git202311021215.73a044d9
 
 debian/control.d/dkms-%: module = $(patsubst debian/control.d/dkms-%,%,$@)
 debian/control.d/dkms-%: module_archs = $(dkms_$(patsubst debian/control.d/dkms-%,%,$@)_archs)
@@ -136,6 +137,7 @@ gencontrol_flags += \
   )
 gencontrol_flags += -Vdkms:virtualbox-guest-modules="virtualbox-guest-modules (= $(dkms_virtualbox_version)),"
 gencontrol_flags += -Vdkms:wireguard-linux-compat-modules="wireguard-modules (= $(dkms_wireguard_version)),"
+gencontrol_flags += -Vdkms:ivsc-modules="ivsc-modules (= $(dkms_ivsc_version)),"
 
 build-%:
 	:
