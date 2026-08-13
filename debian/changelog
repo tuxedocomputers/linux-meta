@@ -1,3 +1,9 @@
+linux-meta-tuxedo-26.04 (7.0.0-109029.29tux1) resolute; urgency=medium
+
+  * Master version: 7.0.0-109029.29tux1
+
+ -- Tuxedo BOT <tux@tuxedocomputers.com>  Thu, 13 Aug 2026 16:41:37 +0000
+
 linux-meta-tuxedo-26.04 (7.0.0-108031.31tux1) resolute; urgency=medium
 
   * Master version: 7.0.0-108031.31tux1
